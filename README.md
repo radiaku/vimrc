@@ -4,6 +4,8 @@ This my Custom vimrc for own customization
 
 thanks for [amix](https://github.com/amix/vimrc) 
 
+# Original from Amix :
+
 # The Ultimate vimrc
 
 Over the last 10 years, I have used and tweaked Vim. This configuration is the ultimate vimrc (or at least my version of it).
