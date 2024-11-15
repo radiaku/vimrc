@@ -201,10 +201,10 @@ map <C-h> <C-W>h
 map <C-l> <C-W>l
 
 " Close the current buffer
-map <leader>bd :Bclose<cr>:tabclose<cr>gT
+map <leader>bd :bd!<cr>
 
 " QUIT all
-nnoremap <Leader>bk :q<CR>
+nnoremap <Leader>bk :q!<CR>
 
 
 " Close all the buffers
@@ -295,7 +295,6 @@ map <leader>q :e ~/buffer<cr>
 
 " Quickly open a markdown buffer for scribble
 map <leader>x :e ~/buffer.md<cr>
-
 
 
 
