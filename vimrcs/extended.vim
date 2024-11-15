@@ -3,6 +3,37 @@
 "       This requires that you install https://github.com/amix/vimrc !
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"
+
+" Function to highlight yanked text
+function! HighlightYank()
+    " Highlight group for yanked text
+    highlight YankHighlight ctermfg=White ctermbg=DarkBlue guifg=White guibg=DarkBlue
+    
+    " Save the current cursor position
+    let saved_cursor = getcurpos()
+    
+    " Reselect the yanked text
+    execute "normal! gv"
+    
+    " Highlight the selected text
+    execute "normal! :hi YankHighlight guibg=DarkBlue ctermbg=DarkBlue"
+    
+    " Sleep briefly to allow highlight to be visible
+    sleep 100m
+    
+    " Clear the highlight
+    execute "normal! :hi clear YankHighlight"
+    
+    " Restore cursor position
+    call setpos('.', saved_cursor)
+endfunction
+
+" Autocommand to trigger the highlight function on yank
+augroup YankHighlight
+    autocmd!
+    autocmd TextYankPost * call HighlightYank()
+augroup END
 
 nmap <leader>lg <cmd>:!LazyGit<cr> " Toggle Lazygit
 

@@ -152,7 +152,6 @@ let [s:lcmap, s:prtmaps] = ['nn <buffer> <silent>', {
 	\ 'CreateNewFile()':      ['<c-y>'],
 	\ 'MarkToOpen()':         ['<c-z>'],
 	\ 'OpenMulti()':          ['<c-o>'],
-	\ 'YankLine()':           [],
 	\ 'PrtExit()':            ['<esc>', '<c-c>', '<c-g>'],
 	\ }]
 
