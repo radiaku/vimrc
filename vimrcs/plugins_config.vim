@@ -35,14 +35,14 @@ map <leader>o :BufExplorer<cr>
 " => MRU plugin
 """"""""""""""""""""""""""""""
 let MRU_Max_Entries = 400
-map <leader>f :MRU<CR>
+map <leader>fu :MRU<CR>
 
 
 """"""""""""""""""""""""""""""
 " => YankStack
 """"""""""""""""""""""""""""""
 " let g:yankstack_yank_keys = ['y', 'd']
-"
+
 " nmap <C-p> <Plug>yankstack_substitute_older_paste
 " nmap <C-n> <Plug>yankstack_substitute_newer_paste
 
@@ -83,7 +83,6 @@ let g:snipMate = { 'snippet_version' : 1 }
 """"""""""""""""""""""""""""""
 let Grep_Skip_Dirs = 'RCS CVS SCCS .svn generated'
 set grepprg=/bin/grep\ -nH
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Nerd Tree
@@ -127,25 +126,25 @@ au FileType mako vmap Si S"i${ _(<esc>2f"a) }<esc>
 " => lightline
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:lightline = {
-      \ 'colorscheme': 'wombat',
-      \ 'active': {
-      \   'left': [ ['mode', 'paste'],
-      \             ['fugitive', 'readonly', 'filename', 'modified'] ],
-      \   'right': [ [ 'lineinfo' ], ['percent'] ]
-      \ },
-      \ 'component': {
-      \   'readonly': '%{&filetype=="help"?"":&readonly?"🔒":""}',
-      \   'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
-      \   'fugitive': '%{exists("*FugitiveHead")?FugitiveHead():""}'
-      \ },
-      \ 'component_visible_condition': {
-      \   'readonly': '(&filetype!="help"&& &readonly)',
-      \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
-      \   'fugitive': '(exists("*FugitiveHead") && ""!=FugitiveHead())'
-      \ },
-      \ 'separator': { 'left': ' ', 'right': ' ' },
-      \ 'subseparator': { 'left': ' ', 'right': ' ' }
-      \ }
+            \ 'colorscheme': 'wombat',
+            \ 'active': {
+            \   'left': [ ['mode', 'paste'],
+            \             ['fugitive', 'readonly', 'filename', 'modified'] ],
+            \   'right': [ [ 'lineinfo' ], ['percent'] ]
+            \ },
+            \ 'component': {
+            \   'readonly': '%{&filetype=="help"?"":&readonly?"🔒":""}',
+            \   'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
+            \   'fugitive': '%{exists("*FugitiveHead")?FugitiveHead():""}'
+            \ },
+            \ 'component_visible_condition': {
+            \   'readonly': '(&filetype!="help"&& &readonly)',
+            \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
+            \   'fugitive': '(exists("*FugitiveHead") && ""!=FugitiveHead())'
+            \ },
+            \ 'separator': { 'left': ' ', 'right': ' ' },
+            \ 'subseparator': { 'left': ' ', 'right': ' ' }
+            \ }
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vimroom
@@ -160,10 +159,10 @@ nnoremap <silent> <leader>z :Goyo<cr>
 " => Ale (syntax checker and linter)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:ale_linters = {
-\   'javascript': ['eslint'],
-\   'python': ['flake8'],
-\   'go': ['go', 'golint', 'errcheck']
-\}
+            \   'javascript': ['eslint'],
+            \   'python': ['flake8'],
+            \   'go': ['go', 'golint', 'errcheck']
+            \}
 
 nmap <silent> <leader>a <Plug>(ale_next_wrap)
 

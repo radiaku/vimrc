@@ -7,6 +7,8 @@
 
 
 nmap <leader>lg <cmd>:!LazyGit<cr> " Toggle Lazygit
+nmap <leader>fs <cmd>:!fzf<cr> " Toggle Lazygit
+nmap <leader>co <cmd>:only<cr> " close other
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => GUI related
@@ -35,6 +37,8 @@ set background=dark
 colorscheme peaksea
 
 set modelineexpr
+
+let g:fzf_vim = {}
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Fast editing and reloading of vimrc configs

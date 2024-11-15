@@ -202,7 +202,7 @@ map <C-l> <C-W>l
 Closing of the current buffer(s) (`<leader>bd` and (`<leader>ba`)):
 ```vim	
 " Close current buffer
-map <leader>bd :Bclose<cr>
+map <leader>bd :bd!<CR>
 map <leader>sa :wa<cr>
 
 " Close all buffers
