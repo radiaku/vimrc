@@ -12,7 +12,7 @@ Over the last 10 years, I have used and tweaked Vim. This configuration is the u
 
 There are two versions:
 
-* **The Basic**: If you want something small just copy [basic.vim](https://github.com/radiaku/vimrc/blob/master/vimrcs/basic.vim) into your ~/.vimrc and you will have a good basic setup
+* **The Basic**: If you want something small just copy [basic.vim](https://github.com/radiaku/vimrc/blob/main/vimrcs/basic.vim) into your ~/.vimrc and you will have a good basic setup
 * **The Awesome**: Includes a ton of useful plugins, color schemes, and configurations
 
 I would, of course, recommend using the awesome version.
