@@ -2,7 +2,7 @@
 
 This my Custom vimrc for own customization
 
-thanks for [amix] (https://github.com/amix/vimrc) 
+thanks for [amix](https://github.com/amix/vimrc) 
 
 # The Ultimate vimrc
 
