@@ -37,6 +37,9 @@ set history=500
 filetype plugin on
 filetype indent on
 
+set clipboard=unnamedplus
+
+
 " Set to auto read when a file is changed from the outside
 set autoread
 au FocusGained,BufEnter * silent! checktime
