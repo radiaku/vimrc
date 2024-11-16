@@ -1,9 +1,3 @@
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Important: 
-"       This requires that you install https://github.com/amix/vimrc !
-"
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"
 
 
 nmap <leader>lg <cmd>:!LazyGit<cr> " Toggle Lazygit
@@ -33,8 +27,8 @@ set guioptions-=l
 set guioptions-=L
 
 " Colorscheme
-set background=dark
-colorscheme peaksea
+" set background=dark
+" colorscheme peaksea
 
 set modelineexpr
 

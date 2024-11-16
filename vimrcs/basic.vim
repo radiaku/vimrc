@@ -1,6 +1,9 @@
 " Sets how many lines of history VIM has to remember
 set history=500
 
+" Don't make vim vi-compatibile
+set nocompatible
+
 " Enable filetype plugins
 filetype plugin on
 filetype indent on
@@ -122,10 +125,10 @@ if $COLORTERM == 'gnome-terminal'
     set t_Co=256
 endif
 
-try
-    colorscheme desert
-catch
-endtry
+" try
+"     colorscheme gruvbox
+" catch
+" endtry
 
 set background=dark
 
@@ -297,5 +300,7 @@ map <leader>q :e ~/buffer<cr>
 map <leader>x :e ~/buffer.md<cr>
 
 
+" Highlight Yank 
+let g:highlightedyank_highlight_duration = 1000
 
 
