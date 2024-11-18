@@ -35,9 +35,6 @@ nmap <leader>w :w!<cr>
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => VIM user interface
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set 7 lines to the cursor - when moving vertically using j/k
 set so=7
 
@@ -198,10 +195,10 @@ map <C-space> ?
 map <silent> <leader><cr> :noh<cr>
 
 " Smart way to move between windows
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
+map <A-j> <C-W>j
+map <A-k> <C-W>k
+map <A-h> <C-W>h
+map <A-l> <C-W>l
 
 " Close the current buffer
 map <leader>bd :bd!<cr>
@@ -287,9 +284,6 @@ map <leader>sa :wa<cr>
 map <leader>s? z=
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Misc
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Remove the Windows ^M - when the encodings gets messed up
 noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
