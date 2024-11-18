@@ -11,8 +11,6 @@ au BufNewFile,BufRead *.twig set ft=jinja "Syntax highlight twig files
 
 " [4]
 silent! colorscheme desert  
-" Override cursor bar color (light gray background)
-"hi CursorLine cterm=NONE ctermbg=white
 
 " Show syntax highlighting groups for word under cursor
  :nmap <leader>ss <plug>(SynStack)
