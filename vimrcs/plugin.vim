@@ -19,7 +19,7 @@ Plug 'tpope/vim-surround'
 Plug 'w0rp/ale'
 Plug 'machakann/vim-highlightedyank'
 Plug 'mileszs/ack.vim'
-
+Plug 'morhetz/gruvbox'
 Plug 'dracula/vim'
 
 call plug#end()
