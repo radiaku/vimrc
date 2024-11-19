@@ -1,7 +1,8 @@
 
 
 nmap <leader>lg <cmd>:!LazyGit<cr> " Toggle Lazygit
-nmap <leader>fs <cmd>:!fzf<cr> " Toggle Lazygit
+nmap <leader>ff <cmd>:!fzf<cr> 
+nmap <leader>fs :Ack! <Space> 
 nmap <leader>co <cmd>:only<cr> " close other
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -136,8 +137,8 @@ vnoremap $e <esc>`>a`<esc>`<i`<esc>
   " To go to the previous search results do:
   "   <leader>p
   "
-  map <leader>cc :botright cope<cr>
-  map <leader>co ggVGy:tabnew<cr>:set syntax=qf<cr>pgg
+  map <leader>cc :cclose<cr>
+  map <leader>co :only<cr>
   map <leader>n :cn<cr>
   map <leader>p :cp<cr>
 

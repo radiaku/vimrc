@@ -17,5 +17,9 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-surround'
 Plug 'w0rp/ale'
+Plug 'machakann/vim-highlightedyank'
+Plug 'mileszs/ack.vim'
+
+Plug 'dracula/vim'
 
 call plug#end()

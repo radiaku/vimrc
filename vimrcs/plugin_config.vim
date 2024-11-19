@@ -3,13 +3,8 @@
 map <silent> <leader>ee :NERDTreeToggle<cr>
 
 let g:NERDTreeIgnore = ['^node_modules$']
-" Increase default width
-let g:NERDTreeWinSize=60
+let g:NERDTreeWinSize=30
 
-" [2]
-au BufNewFile,BufRead *.twig set ft=jinja "Syntax highlight twig files
-
-" [4]
 silent! colorscheme desert  
 
 " Show syntax highlighting groups for word under cursor
@@ -32,14 +27,6 @@ if executable('ag')
   let g:ctrlp_extensions = ['line']
 endif
 
-" [8]
-" Set ultisnips triggers
-let g:UltiSnipsSnippetsDir='~/.vimrc_runtime/ultisnips-snippets'   " Custom snippets dir
-let g:UltiSnipsSnippetDirectories=['ultisnips-snippets'] " Custom snippets dir
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
-let g:UltiSnipsEditSplit="vertical"
 
 " Emmet leader key map
 let g:user_emmet_leader_key=','
@@ -48,22 +35,13 @@ let g:user_emmet_leader_key=','
 " Enable vim-prettier to run in files without requiring the "@format" doc tag
 let g:prettier#autoformat = 0
 let g:prettier#config#tab_width = 4
-"none" - No trailing commas.
-"es5" - Trailing commas where valid in ES5 (objects, arrays, etc.)
-"all" - Trailing commas wherever possible (including function arguments). This requires node 8 or a transform.
 let g:prettier#config#trailing_comma = 'es5'
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.html Prettier
 
-" [10]
-
-" Set internal encoding of vim, not needed on neovim, since coc.nvim using some
-" unicode characters in the file autoload/float.vim
 set encoding=utf-8
 
-" TextEdit might fail if hidden is not set.
 set hidden
 
-" Some servers have issues with backup files, see #649.
 set nobackup
 set nowritebackup
 
@@ -107,6 +85,33 @@ nmap <C-j> ]e
 vmap <C-k> [egv
 vmap <C-j> ]egv
 
-" [13]
-" Run php-cs-fixer on save
-autocmd BufWritePost *.php silent! call PhpCsFixerFixFile()
+color dracula
+
+" ack.vim --- {{{
+
+" Use ripgrep for searching ⚡️
+" Options include:
+" --vimgrep -> Needed to parse the rg response properly for ack.vim
+" --type-not sql -> Avoid huge sql file dumps as it slows down the search
+" --smart-case -> Search case insensitive if all lowercase pattern, Search case sensitively otherwise
+let g:ackprg = 'rg --vimgrep --type-not sql --smart-case'
+
+" Auto close the Quickfix list after pressing '<enter>' on a list item
+let g:ack_autoclose = 1
+
+" Any empty ack search will search for the work the cursor is on
+let g:ack_use_cword_for_empty_search = 1
+
+" Don't jump to first match
+cnoreabbrev Ack Ack!
+
+" Maps <leader>/ so we're ready to type the search keyword
+nnoremap <Leader>/ :Ack!<Space>
+" }}}
+
+" Navigate quickfix list with ease
+nnoremap <silent> [q :cprevious<CR>
+nnoremap <silent> ]q :cnext<CR>
+
+nnoremap <S-l> :bnext<CR>
+nnoremap <S-h> :bprevious<CR>
