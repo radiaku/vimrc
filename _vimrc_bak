@@ -1,0 +1,7 @@
+set runtimepath+=~/.vimrc_runtime
+
+source ~/.vimrc_runtime/vimrcs/default_config.vim
+source ~/.vimrc_runtime/vimrcs/basic.vim
+source ~/.vimrc_runtime/vimrcs/extended.vim
+source ~/.vimrc_runtime/vimrcs/plugin_config.vim
+source ~/.vimrc_runtime/vimrcs/plugin.vim

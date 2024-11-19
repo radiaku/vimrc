@@ -75,7 +75,7 @@ nmap <C-j> ]e
 vmap <C-k> [egv
 vmap <C-j> ]egv
 
-color dracula
+" color dracula
 
 " ack.vim --- {{{
 
