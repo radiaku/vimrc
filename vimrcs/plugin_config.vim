@@ -1,31 +1,13 @@
 """" PLUGIN RELATED TWEAKS
 " [1]
 map <silent> <leader>ee :NERDTreeToggle<cr>
+map <silent> <leader>ef :NERDTreeToggle<cr>
 
 let g:NERDTreeIgnore = ['^node_modules$']
 let g:NERDTreeWinSize=30
 
 silent! colorscheme desert  
 
-" Show syntax highlighting groups for word under cursor
- :nmap <leader>ss <plug>(SynStack)
-
-" [5]
-" Use The Silver Searcher https://github.com/ggreer/the_silver_searcher (a lot
-" faster than grep)
-if executable('ag')
-  " Use Ag over Grep
-  set grepprg=ag\ --nogroup\ --nocolor
-
-  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-  let g:ctrlp_working_path_mode = 'r'
-
-  " ag is fast enough that CtrlP doesn't need to cache
-  let g:ctrlp_use_caching = 0
-
-  let g:ctrlp_extensions = ['line']
-endif
 
 
 " Emmet leader key map
@@ -97,3 +79,5 @@ nnoremap <S-l> :bnext<CR>
 nnoremap <S-h> :bprevious<CR>
 
 colorscheme gruvbox
+
+" let g:NERDTreeQuitOnOpen = 1
