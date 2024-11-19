@@ -295,7 +295,7 @@ map <leader>x :e ~/buffer.md<cr>
 
 
 " Highlight Yank 
-let g:highlightedyank_highlight_duration = 1000
+let g:highlightedyank_highlight_duration = 150
 
 set termguicolors
 
