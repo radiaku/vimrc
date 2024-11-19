@@ -95,3 +95,5 @@ nnoremap <silent> ]q :cnext<CR>
 
 nnoremap <S-l> :bnext<CR>
 nnoremap <S-h> :bprevious<CR>
+
+colorscheme gruvbox
