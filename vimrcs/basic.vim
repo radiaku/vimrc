@@ -195,10 +195,10 @@ map <C-space> ?
 map <silent> <leader><cr> :noh<cr>
 
 " Smart way to move between windows
-map <A-j> <C-W>j
-map <A-k> <C-W>k
-map <A-h> <C-W>h
-map <A-l> <C-W>l
+nmap <A-j> <C-W>j
+nmap <A-k> <C-W>k
+nmap <A-h> <C-W>h
+nmap <A-l> <C-W>l
 
 " Close the current buffer
 map <leader>bd :bd!<cr>
@@ -255,10 +255,10 @@ set laststatus=2
 map 0 ^
 
 " Move a line of text using ALT+[jk] or Command+[jk] on mac
-nmap <M-j> mz:m+<cr>`z
-nmap <M-k> mz:m-2<cr>`z
-vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
-vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
+" nmap <M-j> mz:m+<cr>`z
+" nmap <M-k> mz:m-2<cr>`z
+" vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
+" vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
 
 
 " Delete trailing white space on save, useful for some filetypes ;)
