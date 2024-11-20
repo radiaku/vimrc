@@ -195,10 +195,21 @@ map <C-space> ?
 map <silent> <leader><cr> :noh<cr>
 
 " Smart way to move between windows
-nmap <A-j> <C-W>j
-nmap <A-k> <C-W>k
-nmap <A-h> <C-W>h
-nmap <A-l> <C-W>l
+" https://vi.stackexchange.com/questions/2350/how-to-map-alt-key
+" n order to do this I go to console and run sed -n l (you can also use cat for it). Then I press ALT+J and see that the chars on the screen are ^[j .
+" I replace ^[ with \e (because that's what is sent by my terminal when I press esc) and the final string for me is \ej.
+
+if has("unix")
+    execute "set <M-j>=\ej"
+    execute "set <M-h>=\eh"
+    execute "set <M-k>=\ek"
+    execute "set <M-l>=\el"
+endif
+
+nmap <M-j> <C-W>j
+nmap <M-k> <C-W>k
+nmap <M-h> <C-W>h
+nmap <M-l> <C-W>l
 
 " Close the current buffer
 map <leader>bd :bd!<cr>
@@ -213,8 +224,8 @@ map <leader>ba :bufdo bd<cr>
 " nnoremap jk <Esc>
 inoremap jk <Esc>
 
-map <leader>l :bnext<cr>
-map <leader>h :bprevious<cr>
+map <leader>pl :bnext<cr>
+map <leader>ph :bprevious<cr>
 
 " Useful mappings for managing tabs
 map <leader>tn :tabnew<cr>
@@ -231,8 +242,8 @@ map <leader>cd :cd %:p:h<cr>:pwd<cr>
 
 " Specify the behavior when switching between buffers
 try
-  set switchbuf=useopen,usetab,newtab
-  set stal=2
+    set switchbuf=useopen,usetab,newtab
+    set stal=2
 catch
 endtry
 
