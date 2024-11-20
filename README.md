@@ -22,14 +22,14 @@ I would, of course, recommend using the awesome version.
 ### Install for your own user only
 The awesome version includes a lot of great plugins, configurations and color schemes that make Vim a lot better. To install it simply do following from your terminal:
 
-	git clone --depth=1 https://github.com/radiaku/vimrc.git ~/.vim_runtime
-	sh ~/.vim_runtime/install_awesome_vimrc.sh
+	git clone --depth=1 https://github.com/radiaku/vimrc.git ~/.vimrc_runtime
+	sh ~/.vimrc_runtime/install_awesome_vimrc.sh
 	
 ### Install for multiple users
 To install for multiple users, the repository needs to be cloned to a location accessible for all the intended users.
 
-	git clone --depth=1 https://github.com/radiaku/vimrc.git /opt/vim_runtime
-	sh /opt/vim_runtime/install_awesome_parameterized.sh /opt/vim_runtime user0 user1 user2
+	git clone --depth=1 https://github.com/radiaku/vimrc.git /opt/.vimrc_runtime
+	sh /opt/vim_runtime/install_awesome_parameterized.sh /opt/.vimrc_runtime user0 user1 user2
 	# to install for all users with home directories, note that root will not be included
 	sh /opt/vim_runtime/install_awesome_parameterized.sh /opt/vim_runtime --all
 	
@@ -50,8 +50,8 @@ The basic version is just one file and no plugins. Just copy [basic.vim](https:/
 
 The basic version is useful to install on remote servers where you don't need many plugins, and you don't do many edits.
 
-	git clone --depth=1 https://github.com/radiaku/vimrc.git ~/.vim_runtime
-	sh ~/.vim_runtime/install_basic_vimrc.sh
+	git clone --depth=1 https://github.com/radiaku/vimrc.git ~/.vimrc_runtime
+	sh ~/.vimrc_runtime/install_basic_vimrc.sh
 
 
 ## How to install on Windows?
