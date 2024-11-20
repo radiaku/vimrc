@@ -24,6 +24,7 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'mileszs/ack.vim'
 Plug 'morhetz/gruvbox'
 Plug 'dracula/vim'
+Plug 'tpope/vim-commentary'
 
 call plug#end()
 
