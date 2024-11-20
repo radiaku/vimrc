@@ -1,6 +1,6 @@
 
 
-nmap <leader>lg <cmd>:!LazyGit<cr> " Toggle Lazygit
+nmap <leader>lg <cmd>:!lazygit<cr> " Toggle Lazygit
 nmap <leader>ff <cmd>:!fzf<cr> 
 nmap <leader>co <cmd>:only<cr> " close other
 
