@@ -16,7 +16,7 @@ let g:user_emmet_leader_key=','
 " [9]
 " Enable vim-prettier to run in files without requiring the "@format" doc tag
 let g:prettier#autoformat = 0
-let g:prettier#config#tab_width = 4
+let g:prettier#config#tab_width = 2
 let g:prettier#config#trailing_comma = 'es5'
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.html Prettier
 
@@ -51,11 +51,11 @@ endfunction
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 
 
-nmap <C-k> [e
-nmap <C-j> ]e
+" nmap <C-k> [e
+" nmap <C-j> ]e
 
-vmap <C-k> [egv
-vmap <C-j> ]egv
+" vmap <C-k> [egv
+" vmap <C-j> ]egv
 
 " color dracula
 
@@ -81,3 +81,16 @@ nnoremap <S-h> :bprevious<CR>
 colorscheme gruvbox
 
 let g:NERDTreeQuitOnOpen = 0
+
+" Enable vim-airline
+let g:airline#extensions#tabline#enabled = 1
+
+" Set airline to show full path
+let g:airline#extensions#tabline#show_tab_number = 1
+let g:airline#extensions#tabline#show_tab_number = 1
+let g:airline#extensions#tabline#formatter = 'default'
+
+" Show full path in the status line
+let g:airline#extensions#whitespace#enabled = 1
+let g:airline#extensions#whitespace#show_empty = 1
+let g:airline#extensions#whitespace#show_full_path = 1
