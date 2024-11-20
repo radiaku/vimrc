@@ -224,10 +224,13 @@ map <leader>ba :bufdo bd<cr>
 " nnoremap jk <Esc>
 inoremap jk <Esc>
 
-map <leader>pl :bnext<cr>
-map <leader>ph :bprevious<cr>
+" map <leader>pl :bnext<cr>
+" map <leader>ph :bprevious<cr>
 
 " Useful mappings for managing tabs
+map <C-l> :tabnext<cr>
+map <C-h> :tabprevious<cr>
+
 map <leader>tn :tabnew<cr>
 map <leader>to :tabonly<cr>
 map <leader>tc :tabclose<cr>

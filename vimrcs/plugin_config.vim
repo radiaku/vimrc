@@ -80,4 +80,4 @@ nnoremap <S-h> :bprevious<CR>
 
 colorscheme gruvbox
 
-" let g:NERDTreeQuitOnOpen = 1
+let g:NERDTreeQuitOnOpen = 0
