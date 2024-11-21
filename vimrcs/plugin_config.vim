@@ -55,7 +55,8 @@ cnoreabbrev Ack Ack!
 
 nnoremap <Leader>/ :Ack!<Space>
 nnoremap <leader>fs :Ack!<Space> 
-nnoremap <leader>fb :CtrlPBuffer<cr> 
+nnoremap <leader>ff :CtrlP<CR> 
+nnoremap <leader>fb :CtrlPBuffer<CR> 
 
 nnoremap <silent> [q :cprevious<CR>
 nnoremap <silent> ]q :cnext<CR>
@@ -63,7 +64,6 @@ nnoremap <silent> ]q :cnext<CR>
 nnoremap <S-l> :bnext<CR>
 nnoremap <S-h> :bprevious<CR>
 
-colorscheme gruvbox
 
 let g:NERDTreeQuitOnOpen = 0
 
@@ -84,5 +84,7 @@ endfunction
 let g:lightline.component_function = {
       \ 'filename': 'LightlineFilename' }
 
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
+" let g:ctrlp_map = '<c-p>'
+" let g:ctrlp_cmd = 'CtrlP'
+
+colorscheme gruvbox

@@ -15,18 +15,19 @@ Plug 'tpope/vim-surround'
 Plug 'w0rp/ale'
 Plug 'machakann/vim-highlightedyank'
 Plug 'mileszs/ack.vim'
-Plug 'morhetz/gruvbox'
 Plug 'dracula/vim'
 Plug 'tpope/vim-commentary'
 " Plug 'vim-airline/vim-airline'
 " Plug 'vim-airline/vim-airline-themes'
 Plug 'justmao945/vim-clang'
 Plug 'rupurt/vim-mql5'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ap/vim-buftabline'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'morhetz/gruvbox'
 call plug#end()
 
 " Automatically install plugins if they were just added
 if empty(glob(data_dir . '/plugged'))
   autocmd VimEnter * PlugInstall --sync | call plug#end() | source $MYVIMRC
 endif
+
