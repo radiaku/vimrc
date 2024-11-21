@@ -66,16 +66,21 @@ colorscheme gruvbox
 
 let g:NERDTreeQuitOnOpen = 0
 
-" Enable Airline extensions
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#line#enabled = 1
-let g:airline#extensions#encoding#enabled = 1
-let g:airline#extensions#whitespace#enabled = 0
-let g:airline#extensions#hunks#enabled = 0
+set laststatus=2
 
-" Set the line format to show full path on the left
-let g:airline#extensions#line#format = '%F'
 
-" Remove all information from the right side and reset after buffer switch
-let g:airline#extensions#line#right = ''
-autocmd BufEnter * let g:airline#extensions#line#right = ''
+" Enable Lightline
+let g:lightline = {}
+
+" Left section showing full path and modified status
+let g:lightline.active = {
+      \ 'left': [ [ 'filename', 'modified' ] ],
+      \ 'right': [ [ '' ] ],  " Empty right side
+      \ }
+
+function! LightlineFilename()
+  return expand('%:p')
+endfunction
+
+let g:lightline.component_function = {
+      \ 'filename': 'LightlineFilename' }
