@@ -1,25 +1,32 @@
-" Brief help (https://github.com/junegunn/vim-plug)
-" :so % to refresh .vimrc after making changes
-" :PlugInstall to install new stuff
-" :PlugUpdate to update to latest versions. You can force post-update hooks with :PlugUpdate!
-" :PlugClean to remove deleted plugins
+" Start vim-plug
+call plug#begin('~/.vimrc_runtime/plugged')
 
-" call plug#begin('~/.vimrc_runtime/plugged')
-"
+" List your plugins here
 " Plug 'airblade/vim-gitgutter'
-" Plug 'editorconfig/editorconfig-vim'
-" Plug 'itchyny/lightline.vim'
-" Plug 'junegunn/fzf'
-" Plug 'junegunn/fzf.vim'
-" Plug 'mattn/emmet-vim'
-" Plug 'scrooloose/nerdtree'
-" Plug 'terryma/vim-multiple-cursors'
-" Plug 'tpope/vim-eunuch'
-" Plug 'tpope/vim-surround'
-" Plug 'w0rp/ale'
-" Plug 'machakann/vim-highlightedyank'
-" Plug 'mileszs/ack.vim'
-" Plug 'morhetz/gruvbox'
-" Plug 'dracula/vim'
-"
-" call plug#end()
+Plug 'editorconfig/editorconfig-vim'
+Plug 'itchyny/lightline.vim'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'mattn/emmet-vim'
+Plug 'scrooloose/nerdtree'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-surround'
+Plug 'w0rp/ale'
+Plug 'machakann/vim-highlightedyank'
+Plug 'mileszs/ack.vim'
+Plug 'morhetz/gruvbox'
+Plug 'dracula/vim'
+Plug 'tpope/vim-commentary'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
+Plug 'justmao945/vim-clang'
+Plug 'rupurt/vim-mql5'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'ap/vim-buftabline'
+call plug#end()
+
+" Automatically install plugins if they were just added
+if empty(glob(data_dir . '/plugged'))
+  autocmd VimEnter * PlugInstall --sync | call plug#end() | source $MYVIMRC
+endif
