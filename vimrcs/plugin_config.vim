@@ -55,6 +55,7 @@ cnoreabbrev Ack Ack!
 
 nnoremap <Leader>/ :Ack!<Space>
 nnoremap <leader>fs :Ack!<Space> 
+nnoremap <leader>fb :CtrlPBuffer<cr> 
 
 nnoremap <silent> [q :cprevious<CR>
 nnoremap <silent> ]q :cnext<CR>
@@ -82,3 +83,6 @@ endfunction
 
 let g:lightline.component_function = {
       \ 'filename': 'LightlineFilename' }
+
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
