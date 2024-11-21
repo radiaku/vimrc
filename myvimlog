@@ -1,0 +1,2677 @@
+
+could not source "$VIM\vimrc"
+sourcing "$HOME\_vimrc"
+line 5: sourcing "C:\Users\DELL/.vimrc_runtime/vimrcs/default_config.vim"
+line 9: sourcing "C:\Users\DELL\vimfiles\autoload\plug.vim"
+finished sourcing C:\Users\DELL\vimfiles\autoload\plug.vim
+continuing in C:\Users\DELL\.vimrc_runtime\vimrcs\default_config.vim
+line 86: sourcing "C:\Scoop\apps\vim\current\filetype.vim"
+line 2917: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\editorconfig-vim\ftdetect\editorconfig.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\editorconfig-vim\ftdetect\editorconfig.vim
+continuing in C:\Scoop\apps\vim\current\filetype.vim
+line 2917: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\vim-mql5\ftdetect\mql5.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\vim-mql5\ftdetect\mql5.vim
+continuing in C:\Scoop\apps\vim\current\filetype.vim
+finished sourcing C:\Scoop\apps\vim\current\filetype.vim
+continuing in plug#end
+line 86: sourcing "C:\Scoop\apps\vim\current\ftplugin.vim"
+finished sourcing C:\Scoop\apps\vim\current\ftplugin.vim
+continuing in plug#end
+line 86: sourcing "C:\Scoop\apps\vim\current\indent.vim"
+finished sourcing C:\Scoop\apps\vim\current\indent.vim
+continuing in plug#end
+line 89: sourcing "C:\Scoop\apps\vim\current\syntax\syntax.vim"
+line 20: sourcing "C:\Scoop\apps\vim\current\syntax\synload.vim"
+line 22: sourcing "C:\Scoop\apps\vim\current\syntax\syncolor.vim"
+line 37: sourcing "C:\Scoop\apps\vim\current\colors\lists\default.vim"
+finished sourcing C:\Scoop\apps\vim\current\colors\lists\default.vim
+continuing in C:\Scoop\apps\vim\current\syntax\syncolor.vim
+finished sourcing C:\Scoop\apps\vim\current\syntax\syncolor.vim
+continuing in C:\Scoop\apps\vim\current\syntax\synload.vim
+finished sourcing C:\Scoop\apps\vim\current\syntax\synload.vim
+continuing in C:\Scoop\apps\vim\current\syntax\syntax.vim
+Executing FileType Autocommands for "*"
+autocommand 0verbose exe "set syntax=" . expand("<amatch>")
+
+finished sourcing C:\Scoop\apps\vim\current\syntax\syntax.vim
+continuing in plug#end
+finished sourcing C:\Users\DELL/.vimrc_runtime/vimrcs/default_config.vim
+continuing in C:\Users\DELL\.vimrc
+line 8: sourcing "C:\Users\DELL/.vimrc_runtime/vimrcs/plugin.vim"
+finished sourcing C:\Users\DELL/.vimrc_runtime/vimrcs/plugin.vim
+continuing in C:\Users\DELL\.vimrc
+line 9: sourcing "C:\Users\DELL/.vimrc_runtime/vimrcs/basic.vim"
+line 8: sourcing "C:\Scoop\apps\vim\current\filetype.vim"
+finished sourcing C:\Scoop\apps\vim\current\filetype.vim
+continuing in C:\Users\DELL\.vimrc_runtime\vimrcs\basic.vim
+line 8: sourcing "C:\Scoop\apps\vim\current\ftplugin.vim"
+finished sourcing C:\Scoop\apps\vim\current\ftplugin.vim
+continuing in C:\Users\DELL\.vimrc_runtime\vimrcs\basic.vim
+line 9: sourcing "C:\Scoop\apps\vim\current\filetype.vim"
+finished sourcing C:\Scoop\apps\vim\current\filetype.vim
+continuing in C:\Users\DELL\.vimrc_runtime\vimrcs\basic.vim
+line 9: sourcing "C:\Scoop\apps\vim\current\indent.vim"
+finished sourcing C:\Scoop\apps\vim\current\indent.vim
+continuing in C:\Users\DELL\.vimrc_runtime\vimrcs\basic.vim
+line 44: sourcing "C:\Scoop\apps\vim\current/delmenu.vim"
+finished sourcing C:\Scoop\apps\vim\current/delmenu.vim
+continuing in C:\Users\DELL\.vimrc_runtime\vimrcs\basic.vim
+line 45: sourcing "C:\Scoop\apps\vim\current/menu.vim"
+not found in 'runtimepath': "lang/menu_en.utf-8.vim"
+line 59: sourcing "C:\Scoop\apps\vim\current\lang\menu_en_gb.latin1.vim"
+finished sourcing C:\Scoop\apps\vim\current\lang\menu_en_gb.latin1.vim
+continuing in C:\Scoop\apps\vim\current\menu.vim
+line 59: sourcing "C:\Scoop\apps\vim\current\lang\menu_en_gb.utf-8.vim"
+line 3: sourcing "C:\Scoop\apps\vim\current\lang/menu_en_gb.latin1.vim"
+finished sourcing C:\Scoop\apps\vim\current\lang/menu_en_gb.latin1.vim
+continuing in C:\Scoop\apps\vim\current\lang\menu_en_gb.utf-8.vim
+finished sourcing C:\Scoop\apps\vim\current\lang\menu_en_gb.utf-8.vim
+continuing in C:\Scoop\apps\vim\current\menu.vim
+line 185: sourcing "C:\Scoop\apps\vim\current\autoload\paste.vim"
+finished sourcing C:\Scoop\apps\vim\current\autoload\paste.vim
+continuing in C:\Scoop\apps\vim\current\menu.vim
+finished sourcing C:\Scoop\apps\vim\current/menu.vim
+continuing in C:\Users\DELL\.vimrc_runtime\vimrcs\basic.vim
+line 115: sourcing "C:\Scoop\apps\vim\current\syntax\syntax.vim"
+line 16: sourcing "C:\Scoop\apps\vim\current\syntax/nosyntax.vim"
+Executing BufEnter Autocommands for "*"
+autocommand syn clear
+
+autocommand if exists("b:current_syntax") | unlet b:current_syntax | endif
+
+finished sourcing C:\Scoop\apps\vim\current\syntax/nosyntax.vim
+continuing in C:\Scoop\apps\vim\current\syntax\syntax.vim
+line 20: sourcing "C:\Scoop\apps\vim\current\syntax\synload.vim"
+line 22: sourcing "C:\Scoop\apps\vim\current\syntax\syncolor.vim"
+finished sourcing C:\Scoop\apps\vim\current\syntax\syncolor.vim
+continuing in C:\Scoop\apps\vim\current\syntax\synload.vim
+finished sourcing C:\Scoop\apps\vim\current\syntax\synload.vim
+continuing in C:\Scoop\apps\vim\current\syntax\syntax.vim
+Executing FileType Autocommands for "*"
+autocommand 0verbose exe "set syntax=" . expand("<amatch>")
+
+finished sourcing C:\Scoop\apps\vim\current\syntax\syntax.vim
+continuing in C:\Users\DELL\.vimrc_runtime\vimrcs\basic.vim
+line 126: sourcing "C:\Scoop\apps\vim\current\colors\lists\default.vim"
+finished sourcing C:\Scoop\apps\vim\current\colors\lists\default.vim
+continuing in C:\Users\DELL\.vimrc_runtime\vimrcs\basic.vim
+line 126: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\gruvbox\colors\gruvbox.vim"
+line 13: sourcing "C:\Scoop\apps\vim\current\syntax\syncolor.vim"
+finished sourcing C:\Scoop\apps\vim\current\syntax\syncolor.vim
+continuing in C:\Users\DELL\.vimrc_runtime\plugged\gruvbox\colors\gruvbox.vim
+line 15: sourcing "C:\Scoop\apps\vim\current\syntax\syncolor.vim"
+finished sourcing C:\Scoop\apps\vim\current\syntax\syncolor.vim
+continuing in C:\Users\DELL\.vimrc_runtime\plugged\gruvbox\colors\gruvbox.vim
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\gruvbox\colors\gruvbox.vim
+continuing in C:\Users\DELL\.vimrc_runtime\vimrcs\basic.vim
+line 130: sourcing "C:\Scoop\apps\vim\current\colors\lists\default.vim"
+finished sourcing C:\Scoop\apps\vim\current\colors\lists\default.vim
+continuing in C:\Users\DELL\.vimrc_runtime\vimrcs\basic.vim
+line 130: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\gruvbox\colors\gruvbox.vim"
+line 13: sourcing "C:\Scoop\apps\vim\current\syntax\syncolor.vim"
+finished sourcing C:\Scoop\apps\vim\current\syntax\syncolor.vim
+continuing in C:\Users\DELL\.vimrc_runtime\plugged\gruvbox\colors\gruvbox.vim
+line 15: sourcing "C:\Scoop\apps\vim\current\syntax\syncolor.vim"
+finished sourcing C:\Scoop\apps\vim\current\syntax\syncolor.vim
+continuing in C:\Users\DELL\.vimrc_runtime\plugged\gruvbox\colors\gruvbox.vim
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\gruvbox\colors\gruvbox.vim
+continuing in C:\Users\DELL\.vimrc_runtime\vimrcs\basic.vim
+line 330: sourcing "C:\Scoop\apps\vim\current\colors\lists\default.vim"
+finished sourcing C:\Scoop\apps\vim\current\colors\lists\default.vim
+continuing in C:\Users\DELL\.vimrc_runtime\vimrcs\basic.vim
+line 330: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\gruvbox\colors\gruvbox.vim"
+line 13: sourcing "C:\Scoop\apps\vim\current\syntax\syncolor.vim"
+finished sourcing C:\Scoop\apps\vim\current\syntax\syncolor.vim
+continuing in C:\Users\DELL\.vimrc_runtime\plugged\gruvbox\colors\gruvbox.vim
+line 15: sourcing "C:\Scoop\apps\vim\current\syntax\syncolor.vim"
+finished sourcing C:\Scoop\apps\vim\current\syntax\syncolor.vim
+continuing in C:\Users\DELL\.vimrc_runtime\plugged\gruvbox\colors\gruvbox.vim
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\gruvbox\colors\gruvbox.vim
+continuing in C:\Users\DELL\.vimrc_runtime\vimrcs\basic.vim
+finished sourcing C:\Users\DELL/.vimrc_runtime/vimrcs/basic.vim
+continuing in C:\Users\DELL\.vimrc
+line 10: sourcing "C:\Users\DELL/.vimrc_runtime/vimrcs/extended.vim"
+finished sourcing C:\Users\DELL/.vimrc_runtime/vimrcs/extended.vim
+continuing in C:\Users\DELL\.vimrc
+line 11: sourcing "C:\Users\DELL/.vimrc_runtime/vimrcs/plugin_config.vim"
+line 9: sourcing "C:\Scoop\apps\vim\current\colors\lists\default.vim"
+finished sourcing C:\Scoop\apps\vim\current\colors\lists\default.vim
+continuing in C:\Users\DELL\.vimrc_runtime\vimrcs\plugin_config.vim
+line 9: sourcing "C:\Scoop\apps\vim\current\colors\desert.vim"
+line 13: sourcing "C:\Scoop\apps\vim\current\syntax\syncolor.vim"
+finished sourcing C:\Scoop\apps\vim\current\syntax\syncolor.vim
+continuing in C:\Scoop\apps\vim\current\colors\desert.vim
+finished sourcing C:\Scoop\apps\vim\current\colors\desert.vim
+continuing in C:\Users\DELL\.vimrc_runtime\vimrcs\plugin_config.vim
+line 81: sourcing "C:\Scoop\apps\vim\current\colors\lists\default.vim"
+finished sourcing C:\Scoop\apps\vim\current\colors\lists\default.vim
+continuing in C:\Users\DELL\.vimrc_runtime\vimrcs\plugin_config.vim
+line 81: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\gruvbox\colors\gruvbox.vim"
+line 13: sourcing "C:\Scoop\apps\vim\current\syntax\syncolor.vim"
+finished sourcing C:\Scoop\apps\vim\current\syntax\syncolor.vim
+continuing in C:\Users\DELL\.vimrc_runtime\plugged\gruvbox\colors\gruvbox.vim
+line 15: sourcing "C:\Scoop\apps\vim\current\syntax\syncolor.vim"
+finished sourcing C:\Scoop\apps\vim\current\syntax\syncolor.vim
+continuing in C:\Users\DELL\.vimrc_runtime\plugged\gruvbox\colors\gruvbox.vim
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\gruvbox\colors\gruvbox.vim
+continuing in C:\Users\DELL\.vimrc_runtime\vimrcs\plugin_config.vim
+finished sourcing C:\Users\DELL/.vimrc_runtime/vimrcs/plugin_config.vim
+continuing in C:\Users\DELL\.vimrc
+finished sourcing $HOME\_vimrc
+not found in 'packpath': "pack/*/start/*"
+sourcing "C:\Users\DELL\.vimrc_runtime\plugged\editorconfig-vim\plugin\editorconfig.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\editorconfig-vim\plugin\editorconfig.vim
+sourcing "C:\Users\DELL\.vimrc_runtime\plugged\lightline.vim\plugin\lightline.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\lightline.vim\plugin\lightline.vim
+sourcing "C:\Users\DELL\.vimrc_runtime\plugged\fzf\plugin\fzf.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\fzf\plugin\fzf.vim
+sourcing "C:\Users\DELL\.vimrc_runtime\plugged\fzf.vim\plugin\fzf.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\fzf.vim\plugin\fzf.vim
+sourcing "C:\Users\DELL\.vimrc_runtime\plugged\emmet-vim\plugin\emmet.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\emmet-vim\plugin\emmet.vim
+sourcing "C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\plugin\NERD_tree.vim"
+line 59: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\autoload\nerdtree.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\autoload\nerdtree.vim
+continuing in C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\plugin\NERD_tree.vim
+line 1: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\lib\nerdtree\path.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\lib\nerdtree\path.vim
+continuing in nerdtree#loadClassFiles
+line 2: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\lib\nerdtree\menu_controller.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\lib\nerdtree\menu_controller.vim
+continuing in nerdtree#loadClassFiles
+line 3: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\lib\nerdtree\menu_item.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\lib\nerdtree\menu_item.vim
+continuing in nerdtree#loadClassFiles
+line 4: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\lib\nerdtree\key_map.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\lib\nerdtree\key_map.vim
+continuing in nerdtree#loadClassFiles
+line 5: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\lib\nerdtree\bookmark.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\lib\nerdtree\bookmark.vim
+continuing in nerdtree#loadClassFiles
+line 6: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\lib\nerdtree\tree_file_node.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\lib\nerdtree\tree_file_node.vim
+continuing in nerdtree#loadClassFiles
+line 7: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\lib\nerdtree\tree_dir_node.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\lib\nerdtree\tree_dir_node.vim
+continuing in nerdtree#loadClassFiles
+line 8: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\lib\nerdtree\opener.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\lib\nerdtree\opener.vim
+continuing in nerdtree#loadClassFiles
+line 9: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\lib\nerdtree\creator.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\lib\nerdtree\creator.vim
+continuing in nerdtree#loadClassFiles
+line 10: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\lib\nerdtree\flag_set.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\lib\nerdtree\flag_set.vim
+continuing in nerdtree#loadClassFiles
+line 11: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\lib\nerdtree\nerdtree.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\lib\nerdtree\nerdtree.vim
+continuing in nerdtree#loadClassFiles
+line 12: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\lib\nerdtree\ui.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\lib\nerdtree\ui.vim
+continuing in nerdtree#loadClassFiles
+line 13: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\lib\nerdtree\event.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\lib\nerdtree\event.vim
+continuing in nerdtree#loadClassFiles
+line 14: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\lib\nerdtree\notifier.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\lib\nerdtree\notifier.vim
+continuing in nerdtree#loadClassFiles
+line 148: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\autoload\nerdtree\ui_glue.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\autoload\nerdtree\ui_glue.vim
+continuing in C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\plugin\NERD_tree.vim
+line 5: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\nerdtree_plugin\exec_menuitem.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\nerdtree_plugin\exec_menuitem.vim
+continuing in nerdtree#postSourceActions
+line 5: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\nerdtree_plugin\fs_menu.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\nerdtree_plugin\fs_menu.vim
+continuing in nerdtree#postSourceActions
+line 5: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\nerdtree_plugin\vcs.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\nerdtree_plugin\vcs.vim
+continuing in nerdtree#postSourceActions
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\nerdtree\plugin\NERD_tree.vim
+sourcing "C:\Users\DELL\.vimrc_runtime\plugged\vim-multiple-cursors\plugin\multiple_cursors.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\vim-multiple-cursors\plugin\multiple_cursors.vim
+sourcing "C:\Users\DELL\.vimrc_runtime\plugged\vim-eunuch\plugin\eunuch.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\vim-eunuch\plugin\eunuch.vim
+sourcing "C:\Users\DELL\.vimrc_runtime\plugged\vim-surround\plugin\surround.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\vim-surround\plugin\surround.vim
+sourcing "C:\Users\DELL\.vimrc_runtime\plugged\ale\plugin\ale.vim"
+line 371: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\ale\autoload\ale\events.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\ale\autoload\ale\events.vim
+continuing in C:\Users\DELL\.vimrc_runtime\plugged\ale\plugin\ale.vim
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\ale\plugin\ale.vim
+sourcing "C:\Users\DELL\.vimrc_runtime\plugged\vim-highlightedyank\plugin\highlightedyank.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\vim-highlightedyank\plugin\highlightedyank.vim
+sourcing "C:\Users\DELL\.vimrc_runtime\plugged\ack.vim\plugin\ack.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\ack.vim\plugin\ack.vim
+sourcing "C:\Users\DELL\.vimrc_runtime\plugged\vim-commentary\plugin\commentary.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\vim-commentary\plugin\commentary.vim
+sourcing "C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\plugin\airline.vim"
+line 303: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\init.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\init.vim
+continuing in C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\plugin\airline.vim
+line 165: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\parts.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\parts.vim
+continuing in airline#init#bootstrap
+line 181: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\formatter\short_path.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\formatter\short_path.vim
+continuing in airline#init#bootstrap
+line 75: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\util.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\util.vim
+continuing in <SNR>58_airline_toggle
+No matching autocommands: User AirlineToggledOn
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\plugin\airline.vim
+sourcing "C:\Users\DELL\.vimrc_runtime\plugged\vim-clang\plugin\clang.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\vim-clang\plugin\clang.vim
+sourcing "C:\Scoop\apps\vim\current\plugin\getscriptPlugin.vim"
+finished sourcing C:\Scoop\apps\vim\current\plugin\getscriptPlugin.vim
+sourcing "C:\Scoop\apps\vim\current\plugin\gzip.vim"
+finished sourcing C:\Scoop\apps\vim\current\plugin\gzip.vim
+sourcing "C:\Scoop\apps\vim\current\plugin\logiPat.vim"
+finished sourcing C:\Scoop\apps\vim\current\plugin\logiPat.vim
+sourcing "C:\Scoop\apps\vim\current\plugin\manpager.vim"
+finished sourcing C:\Scoop\apps\vim\current\plugin\manpager.vim
+sourcing "C:\Scoop\apps\vim\current\plugin\matchparen.vim"
+finished sourcing C:\Scoop\apps\vim\current\plugin\matchparen.vim
+sourcing "C:\Scoop\apps\vim\current\plugin\netrwPlugin.vim"
+finished sourcing C:\Scoop\apps\vim\current\plugin\netrwPlugin.vim
+sourcing "C:\Scoop\apps\vim\current\plugin\rrhelper.vim"
+finished sourcing C:\Scoop\apps\vim\current\plugin\rrhelper.vim
+sourcing "C:\Scoop\apps\vim\current\plugin\spellfile.vim"
+finished sourcing C:\Scoop\apps\vim\current\plugin\spellfile.vim
+sourcing "C:\Scoop\apps\vim\current\plugin\tarPlugin.vim"
+finished sourcing C:\Scoop\apps\vim\current\plugin\tarPlugin.vim
+sourcing "C:\Scoop\apps\vim\current\plugin\tohtml.vim"
+finished sourcing C:\Scoop\apps\vim\current\plugin\tohtml.vim
+sourcing "C:\Scoop\apps\vim\current\plugin\vimballPlugin.vim"
+finished sourcing C:\Scoop\apps\vim\current\plugin\vimballPlugin.vim
+sourcing "C:\Scoop\apps\vim\current\plugin\zipPlugin.vim"
+finished sourcing C:\Scoop\apps\vim\current\plugin\zipPlugin.vim
+not found in 'packpath': "pack/*/start/*"
+not found in 'runtimepath': "plugin/**/*.vim"
+Reading viminfo file "C:\Users\DELL\_viminfo" info oldfiles
+Executing BufWinEnter Autocommands for "*"
+autocommand let g:fzf#vim#buffers[bufnr('')] = reltimefloat(reltime())
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call ale#events#LintOnEnter(str2nr(expand('<abuf>')))
+
+line 4: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\ale\autoload\ale.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\ale\autoload\ale.vim
+continuing in ale#events#LintOnEnter
+Executing BufWinEnter Autocommands for "*"
+autocommand call <sid>on_window_changed('BufWinEnter')
+
+line 6: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\extensions.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\extensions.vim
+continuing in <SNR>58_init
+line 16: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\extensions\quickfix.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\extensions\quickfix.vim
+continuing in airline#extensions#load
+line 1: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline.vim
+continuing in 271
+line 40: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\extensions\netrw.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\extensions\netrw.vim
+continuing in airline#extensions#load
+line 46: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\extensions\fzf.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\extensions\fzf.vim
+continuing in airline#extensions#load
+line 58: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\extensions\term.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\extensions\term.vim
+continuing in airline#extensions#load
+line 211: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\extensions\ale.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\extensions\ale.vim
+continuing in airline#extensions#load
+line 253: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\extensions\wordcount.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\extensions\wordcount.vim
+continuing in airline#extensions#load
+line 258: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\extensions\tabline.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\extensions\tabline.vim
+continuing in airline#extensions#load
+line 6: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\extensions\tabline\autoshow.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\extensions\tabline\autoshow.vim
+continuing in <SNR>85_toggle_on
+line 7: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\extensions\tabline\tabs.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\extensions\tabline\tabs.vim
+continuing in <SNR>85_toggle_on
+line 8: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\extensions\tabline\buffers.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\extensions\tabline\buffers.vim
+continuing in <SNR>85_toggle_on
+line 313: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\extensions\keymap.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\extensions\keymap.vim
+continuing in airline#extensions#load
+not found in 'runtimepath': "autoload/vimtex.vim"
+line 341: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\extensions\searchcount.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\extensions\searchcount.vim
+continuing in airline#extensions#load
+line 3: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\section.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\section.vim
+continuing in airline#init#sections
+line 2: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\highlighter.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\highlighter.vim
+continuing in <SNR>91_wrap_accent
+line 14: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\gruvbox\autoload\airline\themes\gruvbox.vim"
+line 2: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\themes.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\themes.vim
+continuing in airline#themes#gruvbox#refresh
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\gruvbox\autoload\airline\themes\gruvbox.vim
+continuing in airline#switch_theme
+line 1: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\builder.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\builder.vim
+continuing in <SNR>79_invoke_funcrefs
+line 2: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\extensions\default.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\extensions\default.vim
+continuing in airline#util#exec_funcrefs
+No matching autocommands: User AirlineAfterTheme
+Executing User Autocommands for "AirlineModeChanged"
+autocommand call airline#mode_changed()
+
+No matching autocommands: User AirlineAfterTheme
+No matching autocommands: User AirlineAfterInit
+Executing BufWinEnter Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing BufEnter Autocommands for "*"
+autocommand silent! checktime
+
+Executing BufEnter Autocommands for "*"
+autocommand call lightline#update()
+
+line 0: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\lightline.vim\autoload\lightline.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\lightline.vim\autoload\lightline.vim
+continuing in BufEnter Autocommands for "*"
+line 37: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\lightline.vim\autoload\lightline\tab.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\lightline.vim\autoload\lightline\tab.vim
+continuing in lightline#init
+line 2: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\lightline.vim\autoload\lightline\colorscheme\default.vim"
+line 8: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\lightline.vim\autoload\lightline\colorscheme\powerline.vim"
+line 28: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\lightline.vim\autoload\lightline\colorscheme.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\lightline.vim\autoload\lightline\colorscheme.vim
+continuing in C:\Users\DELL\.vimrc_runtime\plugged\lightline.vim\autoload\lightline\colorscheme\powerline.vim
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\lightline.vim\autoload\lightline\colorscheme\powerline.vim
+continuing in C:\Users\DELL\.vimrc_runtime\plugged\lightline.vim\autoload\lightline\colorscheme\default.vim
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\lightline.vim\autoload\lightline\colorscheme\default.vim
+continuing in lightline#colorscheme
+Executing BufEnter Autocommands for "*"
+autocommand call nerdtree#checkForBrowse(expand('<amatch>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#events#ReadOrEnterEvent(str2nr(expand('<abuf>')))
+
+Executing BufEnter Autocommands for "*"
+autocommand sil call s:LocalBrowse(expand("<amatch>"))
+
+Executing VimEnter Autocommands for "*"
+autocommand if !exists("no_buffers_menu") | call <SID>BMShow() | endif
+
+autocommand au! LoadBufferMenu
+
+Executing VimEnter Autocommands for "*"
+autocommand call s:UseConfigFiles(1)
+
+Executing VimEnter Autocommands for "*"
+autocommand silent! autocmd! FileExplorer
+
+autocommand call nerdtree#checkForBrowse(expand('<amatch>'))
+
+Executing VimEnter Autocommands for "*"
+autocommand call s:MapCR() | if has('patch-8.1.1113') || has('nvim-0.4') |   exe 'autocmd eunuch InsertEnter * ++once call s:MapCR()' | endif
+
+Executing VimEnter Autocommands for "*"
+autocommand call <sid>on_window_changed('VimEnter')
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+line 12: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\ale\autoload\ale\engine.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\ale\autoload\ale\engine.vim
+continuing in airline#extensions#ale#get
+line 18: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\ale\autoload\ale\statusline.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\ale\autoload\ale\statusline.vim
+continuing in airline#extensions#ale#get
+Executing CursorHold Autocommands for "*"
+autocommand call <SID>SetupLazyloadMenus() | au! SetupLazyloadMenus
+
+Executing CursorHold Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+line 0: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\ale\autoload\ale\cursor.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\ale\autoload\ale\cursor.vim
+continuing in CursorHold Autocommands for "*"
+autocommand if exists('*ale#lsp#Send') | call ale#hover#ShowTruncatedMessageAtCursor() | endif
+
+Executing CursorHold Autocommands for "*"
+autocommand call <sid>ale_refresh()
+
+Executing CursorHold Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+autocommand if exists('*ale#lsp#Send') | call ale#hover#ShowTruncatedMessageAtCursor() | endif
+
+Executing CursorHold Autocommands for "*"
+autocommand call <sid>ale_refresh()
+
+Executing ModeChanged Autocommands for "*"
+autocommand :call airline#update_tabline()
+
+
+Executing WinLeave Autocommands for "*"
+autocommand call s:Remove_Matches()
+
+Executing WinEnter Autocommands for "*"
+autocommand call lightline#update()
+
+Executing WinEnter Autocommands for "*"
+autocommand call s:dopopd()
+
+Executing WinEnter Autocommands for "*"
+autocommand let g:fzf#vim#buffers[bufnr('')] = reltimefloat(reltime())
+
+Executing WinEnter Autocommands for "*"
+autocommand call <sid>on_window_changed('WinEnter')
+
+Executing WinEnter Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing BufNew Autocommands for "*"
+autocommand call s:UseConfigFiles(1)
+
+Executing BufAdd Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#invalidate()
+
+line 0: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\extensions\tabline\buflist.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\vim-airline\autoload\airline\extensions\tabline\buflist.vim
+continuing in BufAdd Autocommands for "*"
+Executing BufAdd Autocommands for "*"
+autocommand call s:BMAdd()
+
+Error detected while processing function 205[2]..206[14]..189[19]..195[7]..BufAdd Autocommands for "*"..function <SNR>16_BMAdd:
+line    6:
+E495: No autocommand file name to substitute for "<afile>"
+Executing BufLeave Autocommands for "*"
+autocommand call s:Remove_Matches()
+
+Executing BufLeave Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#invalidate()
+
+Executing BufEnter Autocommands for "*"
+autocommand silent! checktime
+
+Executing BufEnter Autocommands for "*"
+autocommand call lightline#update()
+
+Executing BufEnter Autocommands for "*"
+autocommand call nerdtree#checkForBrowse(expand('<amatch>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#events#ReadOrEnterEvent(str2nr(expand('<abuf>')))
+
+Executing BufWinEnter Autocommands for "*"
+autocommand let g:fzf#vim#buffers[bufnr('')] = reltimefloat(reltime())
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call ale#events#LintOnEnter(str2nr(expand('<abuf>')))
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call <sid>on_window_changed('BufWinEnter')
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing BufUnload Autocommands for "*"
+autocommand call <sid>on_window_changed('BufUnload')
+
+Executing BufUnload Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#invalidate()
+
+Executing BufDelete Autocommands for "*"
+autocommand silent! call remove(g:fzf#vim#buffers, expand('<abuf>'))
+
+Executing BufDelete Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#engine#Cleanup(str2nr(expand('<abuf>'))) | endif
+
+Executing BufDelete Autocommands for "*"
+autocommand call airline#extensions#tabline#tabs#invalidate()
+
+Executing BufDelete Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#clean()
+
+Executing BufDelete Autocommands for "*"
+autocommand call s:BMRemove()
+
+Executing BufNew Autocommands for "*"
+autocommand call s:UseConfigFiles(1)
+
+Executing BufAdd Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#invalidate()
+
+Executing BufAdd Autocommands for "*"
+autocommand call s:BMAdd()
+
+Reading viminfo file "C:\Users\DELL\_viminfo" marks
+Executing BufNewFile Autocommands for "*"
+autocommand if !did_filetype() && expand("<amatch>") !~ g:ft_ignore_pat | runtime! scripts.vim | endif
+
+line 0: sourcing "C:\Scoop\apps\vim\current\scripts.vim"
+line 27: sourcing "C:\Scoop\apps\vim\current\autoload\dist\script.vim"
+finished sourcing C:\Scoop\apps\vim\current\autoload\dist\script.vim
+continuing in C:\Scoop\apps\vim\current\scripts.vim
+finished sourcing C:\Scoop\apps\vim\current\scripts.vim
+continuing in BufNewFile Autocommands for "*"
+Executing BufNewFile Autocommands for "*"
+autocommand if !did_filetype() && expand("<amatch>") !~ g:ft_ignore_pat    && (expand("<amatch>") =~# '\.conf$'^I|| getline(1) =~ '^#' || getline(2) =~ '^#'^I|| getline(3) =~ '^#' || getline(4) =~ '^#'^I|| getline(5) =~ '^#') |   setf FALLBACK conf | endif
+
+Executing BufNewFile Autocommands for "*"
+autocommand call s:UseConfigFiles(1)
+
+Executing BufNewFile Autocommands for "*"
+autocommand let b:eunuch_chmod_shebang = 1
+
+Executing BufEnter Autocommands for "*"
+autocommand silent! checktime
+
+Executing BufEnter Autocommands for "*"
+autocommand call lightline#update()
+
+Executing BufEnter Autocommands for "NERD_tree_*"
+autocommand stopinsert
+
+Executing BufEnter Autocommands for "*"
+autocommand call nerdtree#checkForBrowse(expand('<amatch>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#events#ReadOrEnterEvent(str2nr(expand('<abuf>')))
+
+Executing BufWinEnter Autocommands for "*"
+autocommand let g:fzf#vim#buffers[bufnr('')] = reltimefloat(reltime())
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call ale#events#LintOnEnter(str2nr(expand('<abuf>')))
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call <sid>on_window_changed('BufWinEnter')
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing BufDelete Autocommands for "*"
+autocommand silent! call remove(g:fzf#vim#buffers, expand('<abuf>'))
+
+Executing BufDelete Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#engine#Cleanup(str2nr(expand('<abuf>'))) | endif
+
+Executing BufDelete Autocommands for "*"
+autocommand call airline#extensions#tabline#tabs#invalidate()
+
+Executing BufDelete Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#clean()
+
+Executing BufDelete Autocommands for "*"
+autocommand call s:BMRemove()
+
+Executing FileType Autocommands for "*"
+autocommand call LoadFTPlugin()
+
+not found in 'runtimepath': "ftplugin/nerdtree.vim ftplugin/nerdtree_*.vim ftplugin/nerdtree/*.vim"
+Executing FileType Autocommands for "*"
+autocommand call s:LoadIndent()
+
+not found in 'runtimepath': "indent/nerdtree.vim"
+Executing FileType Autocommands for "*"
+autocommand 0verbose exe "set syntax=" . expand("<amatch>")
+
+Executing FileType Autocommands for "*"
+autocommand call ale#events#FileTypeEvent(   str2nr(expand('<abuf>')),   expand('<amatch>'))
+
+Executing FileType Autocommands for "*"
+autocommand call <sid>on_window_changed('FileType')
+
+Executing User Autocommands for "AirlineModeChanged"
+autocommand call airline#mode_changed()
+
+Executing User Autocommands for "AirlineModeChanged"
+autocommand call airline#mode_changed()
+
+
+9 more lines
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing TextChanged Autocommands for "*"
+autocommand call ale#Queue(ale#Var(str2nr(expand('<abuf>')), 'lint_delay'))
+
+Executing TextChanged Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing WinScrolled Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing User Autocommands for "AirlineModeChanged"
+autocommand call airline#mode_changed()
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing CursorHold Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+autocommand if exists('*ale#lsp#Send') | call ale#hover#ShowTruncatedMessageAtCursor() | endif
+
+Executing CursorHold Autocommands for "*"
+autocommand call <sid>ale_refresh()
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing ModeChanged Autocommands for "*"
+autocommand :call airline#update_tabline()
+
+
+
+12 fewer lines
+15 more lines
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing TextChanged Autocommands for "*"
+autocommand call ale#Queue(ale#Var(str2nr(expand('<abuf>')), 'lint_delay'))
+
+Executing TextChanged Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing CursorHold Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+autocommand if exists('*ale#lsp#Send') | call ale#hover#ShowTruncatedMessageAtCursor() | endif
+
+Executing CursorHold Autocommands for "*"
+autocommand call <sid>ale_refresh()
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing ModeChanged Autocommands for "*"
+autocommand :call airline#update_tabline()
+
+
+Executing BufUnload Autocommands for "*"
+autocommand call <sid>on_window_changed('BufUnload')
+
+Executing BufUnload Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#invalidate()
+
+Executing BufDelete Autocommands for "*"
+autocommand silent! call remove(g:fzf#vim#buffers, expand('<abuf>'))
+
+Executing BufDelete Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#engine#Cleanup(str2nr(expand('<abuf>'))) | endif
+
+Executing BufDelete Autocommands for "*"
+autocommand call airline#extensions#tabline#tabs#invalidate()
+
+Executing BufDelete Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#clean()
+
+Executing BufDelete Autocommands for "*"
+autocommand call s:BMRemove()
+
+Executing BufNew Autocommands for "*"
+autocommand call s:UseConfigFiles(1)
+
+Executing BufAdd Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#invalidate()
+
+Executing BufAdd Autocommands for "*"
+autocommand call s:BMAdd()
+
+"vimrcs\default_config.vim" 
+"vimrcs\default_config.vim" 38L, 1158B
+Reading viminfo file "C:\Users\DELL\_viminfo" marks
+Executing BufRead Autocommands for "*.vim"
+autocommand setf vim
+
+Executing FileType Autocommands for "*"
+autocommand call LoadFTPlugin()
+
+line 18: sourcing "C:\Scoop\apps\vim\current\ftplugin\vim.vim"
+finished sourcing C:\Scoop\apps\vim\current\ftplugin\vim.vim
+continuing in <SNR>7_LoadFTPlugin
+Executing FileType Autocommands for "*"
+autocommand call s:LoadIndent()
+
+line 14: sourcing "C:\Scoop\apps\vim\current\indent\vim.vim"
+finished sourcing C:\Scoop\apps\vim\current\indent\vim.vim
+continuing in <SNR>8_LoadIndent
+Executing FileType Autocommands for "*"
+autocommand 0verbose exe "set syntax=" . expand("<amatch>")
+
+Executing FileType Autocommands for "*"
+autocommand call ale#events#FileTypeEvent(   str2nr(expand('<abuf>')),   expand('<amatch>'))
+
+Executing FileType Autocommands for "*"
+autocommand call <sid>on_window_changed('FileType')
+
+Executing BufRead Autocommands for "*"
+autocommand if !did_filetype() && expand("<amatch>") !~ g:ft_ignore_pat | runtime! scripts.vim | endif
+
+Executing BufRead Autocommands for "*"
+autocommand if !did_filetype() && expand("<amatch>") !~ g:ft_ignore_pat    && (expand("<amatch>") =~# '\.conf$'^I|| getline(1) =~ '^#' || getline(2) =~ '^#'^I|| getline(3) =~ '^#' || getline(4) =~ '^#'^I|| getline(5) =~ '^#') |   setf FALLBACK conf | endif
+
+Executing BufRead Autocommands for "*"
+autocommand if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+
+Executing BufRead Autocommands for "*"
+autocommand call s:UseConfigFiles(1)
+
+Executing BufRead Autocommands for "*"
+autocommand if getline(1) !~# '^#!\s*\S' | let b:eunuch_chmod_shebang = 1 | endif
+
+Executing BufRead Autocommands for "*"
+autocommand call ale#events#ReadOrEnterEvent(str2nr(expand('<abuf>')))
+
+Executing BufEnter Autocommands for "*"
+autocommand silent! checktime
+
+Executing BufEnter Autocommands for "*"
+autocommand call lightline#update()
+
+Executing BufEnter Autocommands for "*"
+autocommand call nerdtree#checkForBrowse(expand('<amatch>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#events#ReadOrEnterEvent(str2nr(expand('<abuf>')))
+
+Executing BufWinEnter Autocommands for "*"
+autocommand let g:fzf#vim#buffers[bufnr('')] = reltimefloat(reltime())
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call ale#events#LintOnEnter(str2nr(expand('<abuf>')))
+
+line 44: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\ale\autoload\ale\util.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\ale\autoload\ale\util.vim
+continuing in ale#ShouldDoNothing
+line 3: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\ale\autoload\ale\linter.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\ale\autoload\ale\linter.vim
+continuing in <SNR>76_Lint
+line 12: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\ale\ale_linters\vim\ale_custom_linting_rules.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\ale\ale_linters\vim\ale_custom_linting_rules.vim
+continuing in ale#linter#GetAll
+line 12: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\ale\ale_linters\vim\vimls.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\ale\ale_linters\vim\vimls.vim
+continuing in ale#linter#GetAll
+line 12: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\ale\ale_linters\vim\vint.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\ale\ale_linters\vim\vint.vim
+continuing in ale#linter#GetAll
+No matching autocommands: User ALEWantResults
+line 5: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\ale\autoload\ale\command.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\ale\autoload\ale\command.vim
+continuing in <SNR>102_GetLintFileValues
+No matching autocommands: User ALELintPre
+line 2: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\ale\autoload\ale\lsp_linter.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\ale\autoload\ale\lsp_linter.vim
+continuing in <SNR>102_RunLinter
+line 23: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\ale\autoload\ale\path.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\ale\autoload\ale\path.vim
+continuing in ale_linters#vim#vimls#GetProjectRoot
+line 23: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\ale\autoload\ale\history.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\ale\autoload\ale\history.vim
+continuing in ale#engine#IsExecutable
+line 10: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\ale\autoload\ale\sign.vim"
+SignColumn     xxx term=standout ctermbg=237 guibg=#3c3836
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\ale\autoload\ale\sign.vim
+continuing in ale#engine#SetResults
+line 14: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\ale\autoload\ale\list.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\ale\autoload\ale\list.vim
+continuing in ale#engine#SetResults
+line 23: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\ale\autoload\ale\highlight.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\ale\autoload\ale\highlight.vim
+continuing in ale#engine#SetResults
+line 28: sourcing "C:\Users\DELL\.vimrc_runtime\plugged\ale\autoload\ale\virtualtext.vim"
+finished sourcing C:\Users\DELL\.vimrc_runtime\plugged\ale\autoload\ale\virtualtext.vim
+continuing in ale#engine#SetResults
+Executing User Autocommands for "ALELintPost"
+autocommand call <sid>ale_refresh()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call <sid>on_window_changed('BufWinEnter')
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing User Autocommands for "AirlineModeChanged"
+autocommand call airline#mode_changed()
+
+Executing User Autocommands for "AirlineModeChanged"
+autocommand call airline#mode_changed()
+
+Executing ModeChanged Autocommands for "*"
+autocommand :call airline#update_tabline()
+
+
+Executing BufLeave Autocommands for "NERD_tree_*"
+autocommand call nerdtree#onBufLeave()
+
+Executing BufLeave Autocommands for "*"
+autocommand call s:Remove_Matches()
+
+Executing BufLeave Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#invalidate()
+
+Executing WinLeave Autocommands for "NERD_tree_*"
+autocommand call nerdtree#onBufLeave()
+
+Executing WinLeave Autocommands for "*"
+autocommand call s:Remove_Matches()
+
+Executing BufHidden Autocommands for "*"
+autocommand call ale#highlight#BufferHidden(expand('<abuf>'))
+
+Executing WinEnter Autocommands for "*"
+autocommand call lightline#update()
+
+Executing WinEnter Autocommands for "*"
+autocommand call s:dopopd()
+
+Executing WinEnter Autocommands for "*"
+autocommand let g:fzf#vim#buffers[bufnr('')] = reltimefloat(reltime())
+
+Executing WinEnter Autocommands for "*"
+autocommand call <sid>on_window_changed('WinEnter')
+
+Executing WinEnter Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing BufEnter Autocommands for "*"
+autocommand silent! checktime
+
+Executing BufEnter Autocommands for "*"
+autocommand call lightline#update()
+
+Executing BufEnter Autocommands for "*"
+autocommand call nerdtree#checkForBrowse(expand('<amatch>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#events#ReadOrEnterEvent(str2nr(expand('<abuf>')))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#highlight#UpdateHighlights()
+
+Executing WinScrolled Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing CursorHold Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+autocommand if exists('*ale#lsp#Send') | call ale#hover#ShowTruncatedMessageAtCursor() | endif
+
+Executing CursorHold Autocommands for "*"
+autocommand call <sid>ale_refresh()
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing WinScrolled Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing ModeChanged Autocommands for "*"
+autocommand :call airline#update_tabline()
+
+
+Executing WinLeave Autocommands for "*"
+autocommand call s:Remove_Matches()
+
+Executing WinEnter Autocommands for "*"
+autocommand call lightline#update()
+
+Executing WinEnter Autocommands for "*"
+autocommand call s:dopopd()
+
+Executing WinEnter Autocommands for "*"
+autocommand let g:fzf#vim#buffers[bufnr('')] = reltimefloat(reltime())
+
+Executing WinEnter Autocommands for "*"
+autocommand call <sid>on_window_changed('WinEnter')
+
+Executing WinEnter Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing BufLeave Autocommands for "*"
+autocommand call s:Remove_Matches()
+
+Executing BufLeave Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#invalidate()
+
+Executing BufEnter Autocommands for "*"
+autocommand silent! checktime
+
+Executing BufEnter Autocommands for "*"
+autocommand call lightline#update()
+
+Executing BufEnter Autocommands for "NERD_tree_*"
+autocommand stopinsert
+
+Executing BufEnter Autocommands for "*"
+autocommand call nerdtree#checkForBrowse(expand('<amatch>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#events#ReadOrEnterEvent(str2nr(expand('<abuf>')))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#highlight#UpdateHighlights()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand let g:fzf#vim#buffers[bufnr('')] = reltimefloat(reltime())
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call ale#events#LintOnEnter(str2nr(expand('<abuf>')))
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call <sid>on_window_changed('BufWinEnter')
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing FileType Autocommands for "*"
+autocommand call LoadFTPlugin()
+
+not found in 'runtimepath': "ftplugin/nerdtree.vim ftplugin/nerdtree_*.vim ftplugin/nerdtree/*.vim"
+Executing FileType Autocommands for "*"
+autocommand call s:LoadIndent()
+
+not found in 'runtimepath': "indent/nerdtree.vim"
+Executing FileType Autocommands for "*"
+autocommand 0verbose exe "set syntax=" . expand("<amatch>")
+
+Executing FileType Autocommands for "*"
+autocommand call ale#events#FileTypeEvent(   str2nr(expand('<abuf>')),   expand('<amatch>'))
+
+Executing FileType Autocommands for "*"
+autocommand call <sid>on_window_changed('FileType')
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing WinScrolled Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing User Autocommands for "AirlineModeChanged"
+autocommand call airline#mode_changed()
+
+Executing User Autocommands for "AirlineModeChanged"
+autocommand call airline#mode_changed()
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing ModeChanged Autocommands for "*"
+autocommand :call airline#update_tabline()
+
+
+Executing BufNew Autocommands for "*"
+autocommand call s:UseConfigFiles(1)
+
+Executing BufAdd Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#invalidate()
+
+Executing BufAdd Autocommands for "*"
+autocommand call s:BMAdd()
+
+Executing BufLeave Autocommands for "*"
+autocommand call s:Remove_Matches()
+
+Executing BufLeave Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#invalidate()
+
+Executing BufHidden Autocommands for "*"
+autocommand call ale#highlight#BufferHidden(expand('<abuf>'))
+
+"vimrcs\plugin_config.vim" 
+"vimrcs\plugin_config.vim" 96L, 2066B
+Reading viminfo file "C:\Users\DELL\_viminfo" marks
+Executing BufRead Autocommands for "*.vim"
+autocommand setf vim
+
+Executing FileType Autocommands for "*"
+autocommand call LoadFTPlugin()
+
+line 18: sourcing "C:\Scoop\apps\vim\current\ftplugin\vim.vim"
+finished sourcing C:\Scoop\apps\vim\current\ftplugin\vim.vim
+continuing in <SNR>7_LoadFTPlugin
+Executing FileType Autocommands for "*"
+autocommand call s:LoadIndent()
+
+line 14: sourcing "C:\Scoop\apps\vim\current\indent\vim.vim"
+finished sourcing C:\Scoop\apps\vim\current\indent\vim.vim
+continuing in <SNR>8_LoadIndent
+Executing FileType Autocommands for "*"
+autocommand 0verbose exe "set syntax=" . expand("<amatch>")
+
+Executing FileType Autocommands for "*"
+autocommand call ale#events#FileTypeEvent(   str2nr(expand('<abuf>')),   expand('<amatch>'))
+
+Executing FileType Autocommands for "*"
+autocommand call <sid>on_window_changed('FileType')
+
+Executing BufRead Autocommands for "*"
+autocommand if !did_filetype() && expand("<amatch>") !~ g:ft_ignore_pat | runtime! scripts.vim | endif
+
+Executing BufRead Autocommands for "*"
+autocommand if !did_filetype() && expand("<amatch>") !~ g:ft_ignore_pat    && (expand("<amatch>") =~# '\.conf$'^I|| getline(1) =~ '^#' || getline(2) =~ '^#'^I|| getline(3) =~ '^#' || getline(4) =~ '^#'^I|| getline(5) =~ '^#') |   setf FALLBACK conf | endif
+
+Executing BufRead Autocommands for "*"
+autocommand if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+
+Executing BufRead Autocommands for "*"
+autocommand call s:UseConfigFiles(1)
+
+Executing BufRead Autocommands for "*"
+autocommand if getline(1) !~# '^#!\s*\S' | let b:eunuch_chmod_shebang = 1 | endif
+
+Executing BufRead Autocommands for "*"
+autocommand call ale#events#ReadOrEnterEvent(str2nr(expand('<abuf>')))
+
+Executing BufEnter Autocommands for "*"
+autocommand silent! checktime
+
+Executing BufEnter Autocommands for "*"
+autocommand call lightline#update()
+
+Executing BufEnter Autocommands for "*"
+autocommand call nerdtree#checkForBrowse(expand('<amatch>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#events#ReadOrEnterEvent(str2nr(expand('<abuf>')))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#highlight#UpdateHighlights()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand let g:fzf#vim#buffers[bufnr('')] = reltimefloat(reltime())
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call ale#events#LintOnEnter(str2nr(expand('<abuf>')))
+
+No matching autocommands: User ALEWantResults
+No matching autocommands: User ALELintPre
+Executing User Autocommands for "ALELintPost"
+autocommand call <sid>ale_refresh()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call <sid>on_window_changed('BufWinEnter')
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing WinScrolled Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing User Autocommands for "AirlineModeChanged"
+autocommand call airline#mode_changed()
+
+Executing User Autocommands for "AirlineModeChanged"
+autocommand call airline#mode_changed()
+
+Executing ModeChanged Autocommands for "*"
+autocommand :call airline#update_tabline()
+
+
+Executing BufLeave Autocommands for "NERD_tree_*"
+autocommand call nerdtree#onBufLeave()
+
+Executing BufLeave Autocommands for "*"
+autocommand call s:Remove_Matches()
+
+Executing BufLeave Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#invalidate()
+
+Executing WinLeave Autocommands for "NERD_tree_*"
+autocommand call nerdtree#onBufLeave()
+
+Executing WinLeave Autocommands for "*"
+autocommand call s:Remove_Matches()
+
+Executing BufHidden Autocommands for "*"
+autocommand call ale#highlight#BufferHidden(expand('<abuf>'))
+
+Executing WinEnter Autocommands for "*"
+autocommand call lightline#update()
+
+Executing WinEnter Autocommands for "*"
+autocommand call s:dopopd()
+
+Executing WinEnter Autocommands for "*"
+autocommand let g:fzf#vim#buffers[bufnr('')] = reltimefloat(reltime())
+
+Executing WinEnter Autocommands for "*"
+autocommand call <sid>on_window_changed('WinEnter')
+
+Executing WinEnter Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing BufEnter Autocommands for "*"
+autocommand silent! checktime
+
+Executing BufEnter Autocommands for "*"
+autocommand call lightline#update()
+
+Executing BufEnter Autocommands for "*"
+autocommand call nerdtree#checkForBrowse(expand('<amatch>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#events#ReadOrEnterEvent(str2nr(expand('<abuf>')))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#highlight#UpdateHighlights()
+
+Executing WinScrolled Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing CursorHold Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+autocommand if exists('*ale#lsp#Send') | call ale#hover#ShowTruncatedMessageAtCursor() | endif
+
+Executing CursorHold Autocommands for "*"
+autocommand call <sid>ale_refresh()
+
+Executing ModeChanged Autocommands for "*"
+autocommand :call airline#update_tabline()
+
+
+Executing BufLeave Autocommands for "*"
+autocommand call s:Remove_Matches()
+
+Executing BufLeave Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#invalidate()
+
+Executing BufHidden Autocommands for "*"
+autocommand call ale#highlight#BufferHidden(expand('<abuf>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand silent! checktime
+
+Executing BufEnter Autocommands for "*"
+autocommand call lightline#update()
+
+Executing BufEnter Autocommands for "*"
+autocommand call nerdtree#checkForBrowse(expand('<amatch>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#events#ReadOrEnterEvent(str2nr(expand('<abuf>')))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#highlight#UpdateHighlights()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand let g:fzf#vim#buffers[bufnr('')] = reltimefloat(reltime())
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call ale#events#LintOnEnter(str2nr(expand('<abuf>')))
+
+No matching autocommands: User ALEWantResults
+No matching autocommands: User ALELintPre
+Executing User Autocommands for "ALELintPost"
+autocommand call <sid>ale_refresh()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call <sid>on_window_changed('BufWinEnter')
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing WinScrolled Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing ModeChanged Autocommands for "*"
+autocommand :call airline#update_tabline()
+
+
+Executing BufLeave Autocommands for "*"
+autocommand call s:Remove_Matches()
+
+Executing BufLeave Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#invalidate()
+
+Executing BufHidden Autocommands for "*"
+autocommand call ale#highlight#BufferHidden(expand('<abuf>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand silent! checktime
+
+Executing BufEnter Autocommands for "*"
+autocommand call lightline#update()
+
+Executing BufEnter Autocommands for "*"
+autocommand call nerdtree#checkForBrowse(expand('<amatch>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#events#ReadOrEnterEvent(str2nr(expand('<abuf>')))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#highlight#UpdateHighlights()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand let g:fzf#vim#buffers[bufnr('')] = reltimefloat(reltime())
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call ale#events#LintOnEnter(str2nr(expand('<abuf>')))
+
+No matching autocommands: User ALEWantResults
+No matching autocommands: User ALELintPre
+Executing User Autocommands for "ALELintPost"
+autocommand call <sid>ale_refresh()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call <sid>on_window_changed('BufWinEnter')
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing WinScrolled Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing ModeChanged Autocommands for "*"
+autocommand :call airline#update_tabline()
+
+
+Executing BufLeave Autocommands for "*"
+autocommand call s:Remove_Matches()
+
+Executing BufLeave Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#invalidate()
+
+Executing BufHidden Autocommands for "*"
+autocommand call ale#highlight#BufferHidden(expand('<abuf>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand silent! checktime
+
+Executing BufEnter Autocommands for "*"
+autocommand call lightline#update()
+
+Executing BufEnter Autocommands for "*"
+autocommand call nerdtree#checkForBrowse(expand('<amatch>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#events#ReadOrEnterEvent(str2nr(expand('<abuf>')))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#highlight#UpdateHighlights()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand let g:fzf#vim#buffers[bufnr('')] = reltimefloat(reltime())
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call ale#events#LintOnEnter(str2nr(expand('<abuf>')))
+
+No matching autocommands: User ALEWantResults
+No matching autocommands: User ALELintPre
+Executing User Autocommands for "ALELintPost"
+autocommand call <sid>ale_refresh()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call <sid>on_window_changed('BufWinEnter')
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing WinScrolled Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing ModeChanged Autocommands for "*"
+autocommand :call airline#update_tabline()
+
+
+Executing BufLeave Autocommands for "*"
+autocommand call s:Remove_Matches()
+
+Executing BufLeave Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#invalidate()
+
+Executing BufHidden Autocommands for "*"
+autocommand call ale#highlight#BufferHidden(expand('<abuf>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand silent! checktime
+
+Executing BufEnter Autocommands for "*"
+autocommand call lightline#update()
+
+Executing BufEnter Autocommands for "*"
+autocommand call nerdtree#checkForBrowse(expand('<amatch>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#events#ReadOrEnterEvent(str2nr(expand('<abuf>')))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#highlight#UpdateHighlights()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand let g:fzf#vim#buffers[bufnr('')] = reltimefloat(reltime())
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call ale#events#LintOnEnter(str2nr(expand('<abuf>')))
+
+No matching autocommands: User ALEWantResults
+No matching autocommands: User ALELintPre
+Executing User Autocommands for "ALELintPost"
+autocommand call <sid>ale_refresh()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call <sid>on_window_changed('BufWinEnter')
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing WinScrolled Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing ModeChanged Autocommands for "*"
+autocommand :call airline#update_tabline()
+
+
+Executing BufLeave Autocommands for "*"
+autocommand call s:Remove_Matches()
+
+Executing BufLeave Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#invalidate()
+
+Executing BufHidden Autocommands for "*"
+autocommand call ale#highlight#BufferHidden(expand('<abuf>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand silent! checktime
+
+Executing BufEnter Autocommands for "*"
+autocommand call lightline#update()
+
+Executing BufEnter Autocommands for "*"
+autocommand call nerdtree#checkForBrowse(expand('<amatch>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#events#ReadOrEnterEvent(str2nr(expand('<abuf>')))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#highlight#UpdateHighlights()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand let g:fzf#vim#buffers[bufnr('')] = reltimefloat(reltime())
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call ale#events#LintOnEnter(str2nr(expand('<abuf>')))
+
+No matching autocommands: User ALEWantResults
+No matching autocommands: User ALELintPre
+Executing User Autocommands for "ALELintPost"
+autocommand call <sid>ale_refresh()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call <sid>on_window_changed('BufWinEnter')
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing WinScrolled Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing ModeChanged Autocommands for "*"
+autocommand :call airline#update_tabline()
+
+
+Executing BufLeave Autocommands for "*"
+autocommand call s:Remove_Matches()
+
+Executing BufLeave Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#invalidate()
+
+Executing BufHidden Autocommands for "*"
+autocommand call ale#highlight#BufferHidden(expand('<abuf>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand silent! checktime
+
+Executing BufEnter Autocommands for "*"
+autocommand call lightline#update()
+
+Executing BufEnter Autocommands for "*"
+autocommand call nerdtree#checkForBrowse(expand('<amatch>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#events#ReadOrEnterEvent(str2nr(expand('<abuf>')))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#highlight#UpdateHighlights()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand let g:fzf#vim#buffers[bufnr('')] = reltimefloat(reltime())
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call ale#events#LintOnEnter(str2nr(expand('<abuf>')))
+
+No matching autocommands: User ALEWantResults
+No matching autocommands: User ALELintPre
+Executing User Autocommands for "ALELintPost"
+autocommand call <sid>ale_refresh()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call <sid>on_window_changed('BufWinEnter')
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing WinScrolled Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing ModeChanged Autocommands for "*"
+autocommand :call airline#update_tabline()
+
+
+Executing BufLeave Autocommands for "*"
+autocommand call s:Remove_Matches()
+
+Executing BufLeave Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#invalidate()
+
+Executing BufHidden Autocommands for "*"
+autocommand call ale#highlight#BufferHidden(expand('<abuf>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand silent! checktime
+
+Executing BufEnter Autocommands for "*"
+autocommand call lightline#update()
+
+Executing BufEnter Autocommands for "*"
+autocommand call nerdtree#checkForBrowse(expand('<amatch>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#events#ReadOrEnterEvent(str2nr(expand('<abuf>')))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#highlight#UpdateHighlights()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand let g:fzf#vim#buffers[bufnr('')] = reltimefloat(reltime())
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call ale#events#LintOnEnter(str2nr(expand('<abuf>')))
+
+No matching autocommands: User ALEWantResults
+No matching autocommands: User ALELintPre
+Executing User Autocommands for "ALELintPost"
+autocommand call <sid>ale_refresh()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call <sid>on_window_changed('BufWinEnter')
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing WinScrolled Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing ModeChanged Autocommands for "*"
+autocommand :call airline#update_tabline()
+
+
+Executing BufLeave Autocommands for "*"
+autocommand call s:Remove_Matches()
+
+Executing BufLeave Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#invalidate()
+
+Executing BufHidden Autocommands for "*"
+autocommand call ale#highlight#BufferHidden(expand('<abuf>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand silent! checktime
+
+Executing BufEnter Autocommands for "*"
+autocommand call lightline#update()
+
+Executing BufEnter Autocommands for "*"
+autocommand call nerdtree#checkForBrowse(expand('<amatch>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#events#ReadOrEnterEvent(str2nr(expand('<abuf>')))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#highlight#UpdateHighlights()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand let g:fzf#vim#buffers[bufnr('')] = reltimefloat(reltime())
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call ale#events#LintOnEnter(str2nr(expand('<abuf>')))
+
+No matching autocommands: User ALEWantResults
+No matching autocommands: User ALELintPre
+Executing User Autocommands for "ALELintPost"
+autocommand call <sid>ale_refresh()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call <sid>on_window_changed('BufWinEnter')
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing WinScrolled Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing ModeChanged Autocommands for "*"
+autocommand :call airline#update_tabline()
+
+
+Executing BufLeave Autocommands for "*"
+autocommand call s:Remove_Matches()
+
+Executing BufLeave Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#invalidate()
+
+Executing BufHidden Autocommands for "*"
+autocommand call ale#highlight#BufferHidden(expand('<abuf>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand silent! checktime
+
+Executing BufEnter Autocommands for "*"
+autocommand call lightline#update()
+
+Executing BufEnter Autocommands for "*"
+autocommand call nerdtree#checkForBrowse(expand('<amatch>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#events#ReadOrEnterEvent(str2nr(expand('<abuf>')))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#highlight#UpdateHighlights()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand let g:fzf#vim#buffers[bufnr('')] = reltimefloat(reltime())
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call ale#events#LintOnEnter(str2nr(expand('<abuf>')))
+
+No matching autocommands: User ALEWantResults
+No matching autocommands: User ALELintPre
+Executing User Autocommands for "ALELintPost"
+autocommand call <sid>ale_refresh()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call <sid>on_window_changed('BufWinEnter')
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing WinScrolled Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing CursorHold Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+autocommand if exists('*ale#lsp#Send') | call ale#hover#ShowTruncatedMessageAtCursor() | endif
+
+Executing CursorHold Autocommands for "*"
+autocommand call <sid>ale_refresh()
+
+Executing ModeChanged Autocommands for "*"
+autocommand :call airline#update_tabline()
+
+
+Executing BufLeave Autocommands for "*"
+autocommand call s:Remove_Matches()
+
+Executing BufLeave Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#invalidate()
+
+Executing BufHidden Autocommands for "*"
+autocommand call ale#highlight#BufferHidden(expand('<abuf>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand silent! checktime
+
+Executing BufEnter Autocommands for "*"
+autocommand call lightline#update()
+
+Executing BufEnter Autocommands for "*"
+autocommand call nerdtree#checkForBrowse(expand('<amatch>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#events#ReadOrEnterEvent(str2nr(expand('<abuf>')))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#highlight#UpdateHighlights()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand let g:fzf#vim#buffers[bufnr('')] = reltimefloat(reltime())
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call ale#events#LintOnEnter(str2nr(expand('<abuf>')))
+
+No matching autocommands: User ALEWantResults
+No matching autocommands: User ALELintPre
+Executing User Autocommands for "ALELintPost"
+autocommand call <sid>ale_refresh()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call <sid>on_window_changed('BufWinEnter')
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing WinScrolled Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing ModeChanged Autocommands for "*"
+autocommand :call airline#update_tabline()
+
+
+Executing BufLeave Autocommands for "*"
+autocommand call s:Remove_Matches()
+
+Executing BufLeave Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#invalidate()
+
+Executing BufHidden Autocommands for "*"
+autocommand call ale#highlight#BufferHidden(expand('<abuf>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand silent! checktime
+
+Executing BufEnter Autocommands for "*"
+autocommand call lightline#update()
+
+Executing BufEnter Autocommands for "*"
+autocommand call nerdtree#checkForBrowse(expand('<amatch>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#events#ReadOrEnterEvent(str2nr(expand('<abuf>')))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#highlight#UpdateHighlights()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand let g:fzf#vim#buffers[bufnr('')] = reltimefloat(reltime())
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call ale#events#LintOnEnter(str2nr(expand('<abuf>')))
+
+No matching autocommands: User ALEWantResults
+No matching autocommands: User ALELintPre
+Executing User Autocommands for "ALELintPost"
+autocommand call <sid>ale_refresh()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call <sid>on_window_changed('BufWinEnter')
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing WinScrolled Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing ModeChanged Autocommands for "*"
+autocommand :call airline#update_tabline()
+
+
+Executing BufLeave Autocommands for "*"
+autocommand call s:Remove_Matches()
+
+Executing BufLeave Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#invalidate()
+
+Executing BufHidden Autocommands for "*"
+autocommand call ale#highlight#BufferHidden(expand('<abuf>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand silent! checktime
+
+Executing BufEnter Autocommands for "*"
+autocommand call lightline#update()
+
+Executing BufEnter Autocommands for "*"
+autocommand call nerdtree#checkForBrowse(expand('<amatch>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#events#ReadOrEnterEvent(str2nr(expand('<abuf>')))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#highlight#UpdateHighlights()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand let g:fzf#vim#buffers[bufnr('')] = reltimefloat(reltime())
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call ale#events#LintOnEnter(str2nr(expand('<abuf>')))
+
+No matching autocommands: User ALEWantResults
+No matching autocommands: User ALELintPre
+Executing User Autocommands for "ALELintPost"
+autocommand call <sid>ale_refresh()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call <sid>on_window_changed('BufWinEnter')
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing WinScrolled Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing ModeChanged Autocommands for "*"
+autocommand :call airline#update_tabline()
+
+
+Executing BufLeave Autocommands for "*"
+autocommand call s:Remove_Matches()
+
+Executing BufLeave Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#invalidate()
+
+Executing BufHidden Autocommands for "*"
+autocommand call ale#highlight#BufferHidden(expand('<abuf>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand silent! checktime
+
+Executing BufEnter Autocommands for "*"
+autocommand call lightline#update()
+
+Executing BufEnter Autocommands for "*"
+autocommand call nerdtree#checkForBrowse(expand('<amatch>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#events#ReadOrEnterEvent(str2nr(expand('<abuf>')))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#highlight#UpdateHighlights()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand let g:fzf#vim#buffers[bufnr('')] = reltimefloat(reltime())
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call ale#events#LintOnEnter(str2nr(expand('<abuf>')))
+
+No matching autocommands: User ALEWantResults
+No matching autocommands: User ALELintPre
+Executing User Autocommands for "ALELintPost"
+autocommand call <sid>ale_refresh()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call <sid>on_window_changed('BufWinEnter')
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing WinScrolled Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing ModeChanged Autocommands for "*"
+autocommand :call airline#update_tabline()
+
+
+Executing BufLeave Autocommands for "*"
+autocommand call s:Remove_Matches()
+
+Executing BufLeave Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#invalidate()
+
+Executing BufHidden Autocommands for "*"
+autocommand call ale#highlight#BufferHidden(expand('<abuf>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand silent! checktime
+
+Executing BufEnter Autocommands for "*"
+autocommand call lightline#update()
+
+Executing BufEnter Autocommands for "*"
+autocommand call nerdtree#checkForBrowse(expand('<amatch>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#events#ReadOrEnterEvent(str2nr(expand('<abuf>')))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#highlight#UpdateHighlights()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand let g:fzf#vim#buffers[bufnr('')] = reltimefloat(reltime())
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call ale#events#LintOnEnter(str2nr(expand('<abuf>')))
+
+No matching autocommands: User ALEWantResults
+No matching autocommands: User ALELintPre
+Executing User Autocommands for "ALELintPost"
+autocommand call <sid>ale_refresh()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call <sid>on_window_changed('BufWinEnter')
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing WinScrolled Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing ModeChanged Autocommands for "*"
+autocommand :call airline#update_tabline()
+
+
+Executing BufLeave Autocommands for "*"
+autocommand call s:Remove_Matches()
+
+Executing BufLeave Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#invalidate()
+
+Executing BufHidden Autocommands for "*"
+autocommand call ale#highlight#BufferHidden(expand('<abuf>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand silent! checktime
+
+Executing BufEnter Autocommands for "*"
+autocommand call lightline#update()
+
+Executing BufEnter Autocommands for "*"
+autocommand call nerdtree#checkForBrowse(expand('<amatch>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#events#ReadOrEnterEvent(str2nr(expand('<abuf>')))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#highlight#UpdateHighlights()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand let g:fzf#vim#buffers[bufnr('')] = reltimefloat(reltime())
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call ale#events#LintOnEnter(str2nr(expand('<abuf>')))
+
+No matching autocommands: User ALEWantResults
+No matching autocommands: User ALELintPre
+Executing User Autocommands for "ALELintPost"
+autocommand call <sid>ale_refresh()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call <sid>on_window_changed('BufWinEnter')
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing WinScrolled Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing ModeChanged Autocommands for "*"
+autocommand :call airline#update_tabline()
+
+
+Executing BufLeave Autocommands for "*"
+autocommand call s:Remove_Matches()
+
+Executing BufLeave Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#invalidate()
+
+Executing BufHidden Autocommands for "*"
+autocommand call ale#highlight#BufferHidden(expand('<abuf>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand silent! checktime
+
+Executing BufEnter Autocommands for "*"
+autocommand call lightline#update()
+
+Executing BufEnter Autocommands for "*"
+autocommand call nerdtree#checkForBrowse(expand('<amatch>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#events#ReadOrEnterEvent(str2nr(expand('<abuf>')))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#highlight#UpdateHighlights()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand let g:fzf#vim#buffers[bufnr('')] = reltimefloat(reltime())
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call ale#events#LintOnEnter(str2nr(expand('<abuf>')))
+
+No matching autocommands: User ALEWantResults
+No matching autocommands: User ALELintPre
+Executing User Autocommands for "ALELintPost"
+autocommand call <sid>ale_refresh()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call <sid>on_window_changed('BufWinEnter')
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing WinScrolled Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing ModeChanged Autocommands for "*"
+autocommand :call airline#update_tabline()
+
+
+Executing BufLeave Autocommands for "*"
+autocommand call s:Remove_Matches()
+
+Executing BufLeave Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#invalidate()
+
+Executing BufHidden Autocommands for "*"
+autocommand call ale#highlight#BufferHidden(expand('<abuf>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand silent! checktime
+
+Executing BufEnter Autocommands for "*"
+autocommand call lightline#update()
+
+Executing BufEnter Autocommands for "*"
+autocommand call nerdtree#checkForBrowse(expand('<amatch>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#events#ReadOrEnterEvent(str2nr(expand('<abuf>')))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#highlight#UpdateHighlights()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand let g:fzf#vim#buffers[bufnr('')] = reltimefloat(reltime())
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call ale#events#LintOnEnter(str2nr(expand('<abuf>')))
+
+No matching autocommands: User ALEWantResults
+No matching autocommands: User ALELintPre
+Executing User Autocommands for "ALELintPost"
+autocommand call <sid>ale_refresh()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call <sid>on_window_changed('BufWinEnter')
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing WinScrolled Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing ModeChanged Autocommands for "*"
+autocommand :call airline#update_tabline()
+
+
+Executing BufLeave Autocommands for "*"
+autocommand call s:Remove_Matches()
+
+Executing BufLeave Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#invalidate()
+
+Executing BufHidden Autocommands for "*"
+autocommand call ale#highlight#BufferHidden(expand('<abuf>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand silent! checktime
+
+Executing BufEnter Autocommands for "*"
+autocommand call lightline#update()
+
+Executing BufEnter Autocommands for "*"
+autocommand call nerdtree#checkForBrowse(expand('<amatch>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#events#ReadOrEnterEvent(str2nr(expand('<abuf>')))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#highlight#UpdateHighlights()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand let g:fzf#vim#buffers[bufnr('')] = reltimefloat(reltime())
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call ale#events#LintOnEnter(str2nr(expand('<abuf>')))
+
+No matching autocommands: User ALEWantResults
+No matching autocommands: User ALELintPre
+Executing User Autocommands for "ALELintPost"
+autocommand call <sid>ale_refresh()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call <sid>on_window_changed('BufWinEnter')
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing WinScrolled Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing ModeChanged Autocommands for "*"
+autocommand :call airline#update_tabline()
+
+
+Executing BufLeave Autocommands for "*"
+autocommand call s:Remove_Matches()
+
+Executing BufLeave Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#invalidate()
+
+Executing BufHidden Autocommands for "*"
+autocommand call ale#highlight#BufferHidden(expand('<abuf>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand silent! checktime
+
+Executing BufEnter Autocommands for "*"
+autocommand call lightline#update()
+
+Executing BufEnter Autocommands for "*"
+autocommand call nerdtree#checkForBrowse(expand('<amatch>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#events#ReadOrEnterEvent(str2nr(expand('<abuf>')))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#highlight#UpdateHighlights()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand let g:fzf#vim#buffers[bufnr('')] = reltimefloat(reltime())
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call ale#events#LintOnEnter(str2nr(expand('<abuf>')))
+
+No matching autocommands: User ALEWantResults
+No matching autocommands: User ALELintPre
+Executing User Autocommands for "ALELintPost"
+autocommand call <sid>ale_refresh()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call <sid>on_window_changed('BufWinEnter')
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing WinScrolled Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing ModeChanged Autocommands for "*"
+autocommand :call airline#update_tabline()
+
+
+Executing BufLeave Autocommands for "*"
+autocommand call s:Remove_Matches()
+
+Executing BufLeave Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#invalidate()
+
+Executing BufHidden Autocommands for "*"
+autocommand call ale#highlight#BufferHidden(expand('<abuf>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand silent! checktime
+
+Executing BufEnter Autocommands for "*"
+autocommand call lightline#update()
+
+Executing BufEnter Autocommands for "*"
+autocommand call nerdtree#checkForBrowse(expand('<amatch>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#events#ReadOrEnterEvent(str2nr(expand('<abuf>')))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#highlight#UpdateHighlights()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand let g:fzf#vim#buffers[bufnr('')] = reltimefloat(reltime())
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call ale#events#LintOnEnter(str2nr(expand('<abuf>')))
+
+No matching autocommands: User ALEWantResults
+No matching autocommands: User ALELintPre
+Executing User Autocommands for "ALELintPost"
+autocommand call <sid>ale_refresh()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call <sid>on_window_changed('BufWinEnter')
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing WinScrolled Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing ModeChanged Autocommands for "*"
+autocommand :call airline#update_tabline()
+
+
+Executing BufLeave Autocommands for "*"
+autocommand call s:Remove_Matches()
+
+Executing BufLeave Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#invalidate()
+
+Executing BufHidden Autocommands for "*"
+autocommand call ale#highlight#BufferHidden(expand('<abuf>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand silent! checktime
+
+Executing BufEnter Autocommands for "*"
+autocommand call lightline#update()
+
+Executing BufEnter Autocommands for "*"
+autocommand call nerdtree#checkForBrowse(expand('<amatch>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#events#ReadOrEnterEvent(str2nr(expand('<abuf>')))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#highlight#UpdateHighlights()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand let g:fzf#vim#buffers[bufnr('')] = reltimefloat(reltime())
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call ale#events#LintOnEnter(str2nr(expand('<abuf>')))
+
+No matching autocommands: User ALEWantResults
+No matching autocommands: User ALELintPre
+Executing User Autocommands for "ALELintPost"
+autocommand call <sid>ale_refresh()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call <sid>on_window_changed('BufWinEnter')
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing WinScrolled Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing ModeChanged Autocommands for "*"
+autocommand :call airline#update_tabline()
+
+
+Executing BufLeave Autocommands for "*"
+autocommand call s:Remove_Matches()
+
+Executing BufLeave Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#invalidate()
+
+Executing BufHidden Autocommands for "*"
+autocommand call ale#highlight#BufferHidden(expand('<abuf>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand silent! checktime
+
+Executing BufEnter Autocommands for "*"
+autocommand call lightline#update()
+
+Executing BufEnter Autocommands for "*"
+autocommand call nerdtree#checkForBrowse(expand('<amatch>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#events#ReadOrEnterEvent(str2nr(expand('<abuf>')))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#highlight#UpdateHighlights()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand let g:fzf#vim#buffers[bufnr('')] = reltimefloat(reltime())
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call ale#events#LintOnEnter(str2nr(expand('<abuf>')))
+
+No matching autocommands: User ALEWantResults
+No matching autocommands: User ALELintPre
+Executing User Autocommands for "ALELintPost"
+autocommand call <sid>ale_refresh()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call <sid>on_window_changed('BufWinEnter')
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing WinScrolled Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing ModeChanged Autocommands for "*"
+autocommand :call airline#update_tabline()
+
+
+Executing BufLeave Autocommands for "*"
+autocommand call s:Remove_Matches()
+
+Executing BufLeave Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#invalidate()
+
+Executing BufHidden Autocommands for "*"
+autocommand call ale#highlight#BufferHidden(expand('<abuf>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand silent! checktime
+
+Executing BufEnter Autocommands for "*"
+autocommand call lightline#update()
+
+Executing BufEnter Autocommands for "*"
+autocommand call nerdtree#checkForBrowse(expand('<amatch>'))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#events#ReadOrEnterEvent(str2nr(expand('<abuf>')))
+
+Executing BufEnter Autocommands for "*"
+autocommand call ale#highlight#UpdateHighlights()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand let g:fzf#vim#buffers[bufnr('')] = reltimefloat(reltime())
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call ale#events#LintOnEnter(str2nr(expand('<abuf>')))
+
+No matching autocommands: User ALEWantResults
+No matching autocommands: User ALELintPre
+Executing User Autocommands for "ALELintPost"
+autocommand call <sid>ale_refresh()
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call <sid>on_window_changed('BufWinEnter')
+
+Executing BufWinEnter Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing CursorMoved Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+Executing CursorMoved Autocommands for "*"
+autocommand call <sid>on_cursor_moved()
+
+Executing CursorMoved Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing WinScrolled Autocommands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+Executing FocusLost Autocommands for "*"
+autocommand call airline#update_statusline_focuslost()
+
+Executing CursorHold Autocommands for "*"
+autocommand if exists('*ale#engine#Cleanup') | call ale#cursor#EchoCursorWarningWithDelay() | endif
+
+autocommand if exists('*ale#lsp#Send') | call ale#hover#ShowTruncatedMessageAtCursor() | endif
+
+Executing CursorHold Autocommands for "*"
+autocommand call <sid>ale_refresh()
+
+Executing FocusGained Autocommands for "*"
+autocommand silent! checktime
+
+Executing FocusGained Autocommands for "*"
+autocommand call s:on_focus_gained()
+
+No matching autocommands: User AirlineBeforeRefresh
+Executing User Autocommands for "AirlineModeChanged"
+autocommand call airline#mode_changed()
+
+Executing ModeChanged Autocommands for "*"
+autocommand :call airline#update_tabline()
+
+
+Executing QuitPre Autocommands for "*"
+autocommand call ale#events#QuitEvent(str2nr(expand('<abuf>')))
+
+Executing BufUnload Autocommands for "*"
+autocommand call <sid>on_window_changed('BufUnload')
+
+Executing BufUnload Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#invalidate()
+
+Executing BufUnload Autocommands for "*"
+autocommand call <sid>on_window_changed('BufUnload')
+
+Executing BufUnload Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#invalidate()
+
+Executing BufUnload Autocommands for "*"
+autocommand call <sid>on_window_changed('BufUnload')
+
+Executing BufUnload Autocommands for "*"
+autocommand call airline#extensions#tabline#buflist#invalidate()
+
+Writing viminfo file "C:\Users\DELL\_viminfo"

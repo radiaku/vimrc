@@ -40,26 +40,10 @@ else
 endif
 
 
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
-
-
-
 " Use K to show documentation in preview window.
-nnoremap <silent> K :call <SID>show_documentation()<CR>
+" nnoremap <silent> K :call <SID>show_documentation()<CR>
 
 
-" nmap <C-k> [e
-" nmap <C-j> ]e
-
-" vmap <C-k> [egv
-" vmap <C-j> ]egv
-
-" color dracula
-
-" ack.vim --- {{{
 
 let g:ackprg = 'rg --vimgrep --type-not sql --smart-case'
 
@@ -82,8 +66,16 @@ colorscheme gruvbox
 
 let g:NERDTreeQuitOnOpen = 0
 
-" let g:airline#extensions#tabline#enabled = 1
-" let g:airline#extensions#line#enabled = 1
-" let g:airline#extensions#encoding#enabled = 1
-" let g:airline#extensions#line#format = '%f  %{&fileencoding}'
-" let g:airline#extensions#whitespace#enabled = 0
+" Enable Airline extensions
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#line#enabled = 1
+let g:airline#extensions#encoding#enabled = 1
+let g:airline#extensions#whitespace#enabled = 0
+let g:airline#extensions#hunks#enabled = 0
+
+" Set the line format to show full path on the left
+let g:airline#extensions#line#format = '%F'
+
+" Remove all information from the right side and reset after buffer switch
+let g:airline#extensions#line#right = ''
+autocmd BufEnter * let g:airline#extensions#line#right = ''

@@ -265,15 +265,15 @@ highlight SLBufNumber guibg=SeaGreen guifg=#003333
 highlight SLLineNumber guibg=#80a0ff guifg=#003366
 
 set statusline=
-set statusline=\%#SLBackground#
-set statusline+=\ %F
-set statusline+=\%= " separator
-set statusline+=\ %#SLFileType#
-set statusline+=\ FT:\ %Y
-set statusline+=\ %#SLBufNumber#
-set statusline+=\ BN:\ %n
-set statusline+=\ %#SLLineNumber#
-set statusline+=\ LN:\ %l
+" set statusline=\%#SLBackground#
+" set statusline+=\ %F
+" set statusline+=\%= " separator
+" set statusline+=\ %#SLFileType#
+" set statusline+=\ FT:\ %Y
+" set statusline+=\ %#SLBufNumber#
+" set statusline+=\ BN:\ %n
+" set statusline+=\ %#SLLineNumber#
+" set statusline+=\ LN:\ %l
 
 
 
