@@ -82,8 +82,8 @@ colorscheme gruvbox
 
 let g:NERDTreeQuitOnOpen = 0
 
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#line#enabled = 1
-let g:airline#extensions#encoding#enabled = 1
-let g:airline#extensions#line#format = '%l/%L  %{&fileencoding}'
-let g:airline#extensions#whitespace#enabled = 0
+" let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#line#enabled = 1
+" let g:airline#extensions#encoding#enabled = 1
+" let g:airline#extensions#line#format = '%f  %{&fileencoding}'
+" let g:airline#extensions#whitespace#enabled = 0
