@@ -258,7 +258,22 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 " => Status line
 """"""""""""""""""""""""""""""
 " Always show the status line
-set laststatus=2
+" highlight VertSplit guibg=#181818 guifg=#996228
+highlight SLBackground guibg=#181818 guifg=#996228
+highlight SLFileType guibg=indianred guifg=#663333
+highlight SLBufNumber guibg=SeaGreen guifg=#003333
+highlight SLLineNumber guibg=#80a0ff guifg=#003366
+
+set statusline=
+set statusline=\%#SLBackground#
+set statusline+=\ %F
+set statusline+=\%= " separator
+set statusline+=\ %#SLFileType#
+set statusline+=\ FT:\ %Y
+set statusline+=\ %#SLBufNumber#
+set statusline+=\ BN:\ %n
+set statusline+=\ %#SLLineNumber#
+set statusline+=\ LN:\ %l
 
 
 
