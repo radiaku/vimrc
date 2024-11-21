@@ -27,6 +27,8 @@ Plug 'dracula/vim'
 Plug 'tpope/vim-commentary'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'justmao945/vim-clang'
+Plug 'rupurt/vim-mql5'
 
 call plug#end()
 

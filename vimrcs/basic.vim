@@ -284,6 +284,7 @@ fun! CleanExtraSpaces()
     call setreg('/', old_query)
 endfun
 
+
 if has("autocmd")
     autocmd BufWritePre *.txt,*.js,*.py,*.wiki,*.sh,*.coffee :call CleanExtraSpaces()
 endif
@@ -295,7 +296,7 @@ map <leader>sn ]s
 map <leader>sp [s
 " map <leader>sa zg
 map <leader>sa :wa<cr>
-map <leader>s? z=
+" map <leader>s? z=
 
 
 " Remove the Windows ^M - when the encodings gets messed up

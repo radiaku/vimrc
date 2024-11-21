@@ -82,15 +82,7 @@ colorscheme gruvbox
 
 let g:NERDTreeQuitOnOpen = 0
 
-" Enable vim-airline
 let g:airline#extensions#tabline#enabled = 1
-
-" Set airline to show full path
-let g:airline#extensions#tabline#show_tab_number = 1
-let g:airline#extensions#tabline#show_tab_number = 1
-let g:airline#extensions#tabline#formatter = 'default'
-
-" Show full path in the status line
-let g:airline#extensions#whitespace#enabled = 1
-let g:airline#extensions#whitespace#show_empty = 1
-let g:airline#extensions#whitespace#show_full_path = 1
+let g:airline#extensions#line#enabled = 1
+let g:airline#extensions#encoding#enabled = 1
+let g:airline#extensions#line#format = '%l/%L  %{&fileencoding}'
