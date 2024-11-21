@@ -72,10 +72,8 @@ set laststatus=2
 " Enable Lightline
 let g:lightline = {}
 
-" Left section showing full path and modified status
 let g:lightline.active = {
       \ 'left': [ [ 'filename', 'modified' ] ],
-      \ 'right': [ [ '' ] ],  " Empty right side
       \ }
 
 function! LightlineFilename()
