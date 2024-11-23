@@ -325,5 +325,18 @@ let g:highlightedyank_highlight_duration = 150
 set termguicolors
 
 
+" " Set cursor shape based on mode
+" augroup CursorShape
+"     autocmd!
+"     autocmd VimEnter,InsertLeave * let &t_SI = "\e[5 q"  " Set cursor to bold in Normal mode
+"     autocmd InsertEnter * let &t_SI = "\e[2 q"  " Set cursor to thin in Insert mode
+" augroup END
 
+" autocmd InsertEnter,InsertLeave * set cul!
+
+" set cursor bold when normal, thin and hightlight when edit
+
+let &t_SI = "\<Esc>[6 q"
+let &t_SR = "\<Esc>[4 q"
+let &t_EI = "\<Esc>[2 q"
 
