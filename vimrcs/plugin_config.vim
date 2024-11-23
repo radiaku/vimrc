@@ -74,17 +74,23 @@ set laststatus=2
 let g:lightline = {}
 
 let g:lightline.active = {
-      \ 'left': [ [ 'filename', 'modified' ] ],
-      \ }
+    \ 'left': [['filename', 'modified' ]],
+    \ }
 
 function! LightlineFilename()
-  return expand('%:p')
+    return expand('%:p')
 endfunction
 
+
+
 let g:lightline.component_function = {
-      \ 'filename': 'LightlineFilename' }
+            \ 'filename': 'LightlineFilename'}
+
+set laststatus=2
 
 " let g:ctrlp_map = '<c-p>'
 " let g:ctrlp_cmd = 'CtrlP'
 
 colorscheme gruvbox
+
+
