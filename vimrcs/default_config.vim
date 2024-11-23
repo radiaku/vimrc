@@ -14,14 +14,16 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'itchyny/lightline.vim'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mattn/emmet-vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'scrooloose/nerdtree'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-surround'
-Plug 'w0rp/ale'
+Plug 'dense-analysis/ale'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'rhysd/vim-lsp-ale'
 Plug 'machakann/vim-highlightedyank'
 Plug 'mileszs/ack.vim'
 Plug 'dracula/vim'
@@ -37,6 +39,6 @@ call plug#end()
 
 " Automatically install plugins if they were just added
 if empty(glob(data_dir . '/plugged'))
-  autocmd VimEnter * PlugInstall --sync | call plug#end() | source $MYVIMRC
+ autocmd VimEnter * PlugInstall --sync | call plug#end() | source $MYVIMRC
 endif
 

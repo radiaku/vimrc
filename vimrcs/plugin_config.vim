@@ -74,7 +74,7 @@ set laststatus=2
 let g:lightline = {}
 
 let g:lightline.active = {
-    \ 'left': [['filename', 'modified' ]],
+    \ 'left': [['filename', 'modified', ]],
     \ }
 
 function! LightlineFilename()
@@ -93,4 +93,27 @@ set laststatus=2
 
 colorscheme gruvbox
 
+
+" ==== ALE ====
+let g:ale_lint_on_text_changed = 'always'
+let g:ale_fix_on_save = 0
+let g:ale_linters = {
+  \ 'python': ['flake8'],
+  \ 'go': ['gofmt'],
+  \ 'yaml': ['yamllint']
+  \ }
+let g:ale_fixers = {
+  \ 'python': ['autopep8'],
+  \ 'go': ['gofmt'],
+  \ '*': ['remove_trailing_lines', 'trim_whitespace']
+  \ }
+let g:ale_python_flake8_options = '--ignore=E501,E402,F401,E701,E711,E712' " ignore long-lines, import on top of the file, unused modules and statement with colon
+let g:ale_python_autopep8_options = '--ignore=E501'              " ignore long-lines for autopep8 fixer
+let g:ale_yaml_yamllint_options='-d "{extends: relaxed, rules: {line-length: disable}}"'
+
+" let g:airline#extensions#ale#enabled = 1
+let g:ale_sign_warning = "\uf421" "  
+let g:ale_sign_error = "\uf658" "  
+
+let g:ale_echo_msg_format = '[%linter%] %code%: %s'
 

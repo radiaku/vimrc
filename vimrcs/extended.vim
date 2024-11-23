@@ -55,55 +55,36 @@ try
 catch
 endtry
 
+if (exists('g:loaded_lsp_ale') && g:loaded_lsp_ale) || &cp
+    finish
+endif
+let g:loaded_lsp_ale = 1
 
-" Use tab for trigger completion with characters ahead and navigate
-" NOTE: There's always complete item selected by default, you may want to enable
-" no select by `"suggest.noselect": true` in your configuration file
-" NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
-" other plugin before putting this into your config
-inoremap <silent><expr> <TAB>
-      \ coc#pum#visible() ? coc#pum#next(1) :
-      \ CheckBackspace() ? "\<Tab>" :
-      \ coc#refresh()
-inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+let g:lsp_ale_diagnostics_severity = get(g:, 'lsp_ale_diagnostics_severity', 'information')
+let g:lsp_ale_auto_enable_linter = get(g:, 'lsp_ale_auto_enable_linter', v:true)
 
-" Make <CR> to accept selected completion item or notify coc.nvim to format
-" <C-g>u breaks current undo, please make your own choice
-inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
-                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+if get(g:, 'lsp_ale_auto_config_vim_lsp', v:true)
+    " Enable diagnostics and disable all functionalities to show error
+    " messages by vim-lsp
+    let g:lsp_diagnostics_enabled = 1
+    let g:lsp_diagnostics_echo_cursor = 0
+    let g:lsp_diagnostics_float_cursor = 0
+    let g:lsp_diagnostics_highlights_enabled = 0
+    let g:lsp_diagnostics_signs_enabled = 0
+    let g:lsp_diagnostics_virtual_text_enabled = 0
+endif
+if get(g:, 'lsp_ale_auto_config_ale', v:true)
+    " Disable ALE's LSP integration
+    let g:ale_disable_lsp = 1
+endif
 
-" Use `[g` and `]g` to navigate diagnostics
-" Use `:CocDiagnostics` to get all diagnostics of current buffer in location list
-nmap <silent> [g <Plug>(coc-diagnostic-prev)
-nmap <silent> ]g <Plug>(coc-diagnostic-next)
-
-
-" GoTo code navigation
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
-
-" Use K to show documentation in preview window
-nnoremap <silent> K :call ShowDocumentation()<CR>
-
-function! ShowDocumentation()
-  if CocAction('hasProvider', 'hover')
-    call CocActionAsync('doHover')
-  else
-    call feedkeys('K', 'in')
-  endif
-endfunction
-
-" " Highlight the symbol and its references when holding the cursor
-" autocmd CursorHold * silent call CocActionAsync('highlight')
-
-" Symbol renaming
-nmap <leader>rn <Plug>(coc-rename)
-
-" Formatting selected code
-xmap <leader>rf  <Plug>(coc-format-selected)
-nmap <leader>rf  <Plug>(coc-format-selected)
+augroup plugin-lsp-ale
+    autocmd!
+    autocmd User lsp_setup call lsp#ale#enable()
+    autocmd User ALEWantResults call lsp#ale#on_ale_want_results(g:ale_want_results_buffer)
+augroup END
 
 
-
+nmap <leader>xx <cmd>:ALEPopulateQuickfix<cr>
+nmap <leader>fx <cmd>:ALEFix<cr>
+nmap gd <cmd>:ALEGoToDefinition<cr>
