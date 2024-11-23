@@ -306,6 +306,7 @@ map <leader>sn ]s
 map <leader>sp [s
 " map <leader>sa zg
 map <leader>sa :wa<cr>
+map <leader>nh :nohl<cr>
 " map <leader>s? z=
 
 
