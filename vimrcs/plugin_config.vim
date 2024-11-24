@@ -116,15 +116,13 @@ function! LightlineFilename()
     let formatted_path = join(formatted, '/') . (len(formatted) > 0 ? separator : '') . join(last_two, separator)
     
     " Remove any leading or trailing slashes
-    let clean_path = substitute(formatted_path, '^\s*' . separator . '\+', '', '')  " Remove leading slashes
-    let clean_path = substitute(clean_path, separator . '\s*$', '', '')  " Remove trailing slashes
+    let clean_path = substitute(formatted_path, separator . '\+', separator, 'g')
     " echom "Clean Path: " . clean_path
 
-    " Replace backslashes with slashes for consistency
+    " let clean_path = clean_path . (clean_path != '' ? separator : '') . filename
     let clean_path = substitute(clean_path, '\\', '/', 'g')
 
-    " Return the final path with the filename
-    return clean_path . (clean_path != '' ? '/' : '') . filename
+    return clean_path 
 
 endfunction
 
