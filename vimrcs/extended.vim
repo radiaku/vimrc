@@ -73,10 +73,11 @@ if get(g:, 'lsp_ale_auto_config_vim_lsp', v:true)
     let g:lsp_diagnostics_signs_enabled = 0
     let g:lsp_diagnostics_virtual_text_enabled = 0
 endif
-if get(g:, 'lsp_ale_auto_config_ale', v:true)
-    " Disable ALE's LSP integration
-    let g:ale_disable_lsp = 1
-endif
+
+" if get(g:, 'lsp_ale_auto_config_ale', v:true)
+"     " Disable ALE's LSP integration
+"     let g:ale_disable_lsp = 1
+" endif
 
 augroup plugin-lsp-ale
     autocmd!

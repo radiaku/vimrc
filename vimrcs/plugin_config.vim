@@ -98,7 +98,7 @@ colorscheme gruvbox
 let g:ale_lint_on_text_changed = 'always'
 let g:ale_fix_on_save = 0
 let g:ale_linters = {
-  \ 'python': ['flake8'],
+  \ 'python': ['pyright'],
   \ 'go': ['gofmt'],
   \ 'yaml': ['yamllint']
   \ }
@@ -117,3 +117,33 @@ let g:ale_sign_error = "\uf658" " 
 
 let g:ale_echo_msg_format = '[%linter%] %code%: %s'
 
+let g:ale_completion_symbols = {
+            \ 'text': '',
+            \ 'method': '',
+            \ 'function': '',
+            \ 'constructor': '',
+            \ 'field': '',
+            \ 'variable': '',
+            \ 'class': '',
+            \ 'interface': '',
+            \ 'module': '',
+            \ 'property': '',
+            \ 'unit': 'unit',
+            \ 'value': 'val',
+            \ 'enum': '',
+            \ 'keyword': 'keyword',
+            \ 'snippet': '',
+            \ 'color': 'color',
+            \ 'file': '',
+            \ 'reference': 'ref',
+            \ 'folder': '',
+            \ 'enum member': '',
+            \ 'constant': '',
+            \ 'struct': '',
+            \ 'event': 'event',
+            \ 'operator': '',
+            \ 'type_parameter': 'type param',
+            \ '<default>': 'v'
+            \ }
+
+let g:ale_debug = 1
