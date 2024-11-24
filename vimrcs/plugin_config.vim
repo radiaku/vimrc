@@ -78,10 +78,55 @@ let g:lightline.active = {
     \ }
 
 function! LightlineFilename()
-    return expand('%:p')
+    " Get the full path of the current file
+    let fullpath = expand('%:p')
+    " echom "Full Path: " . fullpath
+
+    " Determine the path separator based on the OS
+    let separator = '\'
+    if has('unix')
+        let separator = '/'
+    endif
+
+    " Split the path into components
+    let components = split(fullpath, separator)
+    " echom "Components: " . string(components)
+
+    " Get the last two components (directories)
+    let last_two = components[-2:] 
+    " echom "Last Two Components: " . string(last_two)
+
+    " Get the filename
+    let filename = fnamemodify(fullpath, ':t')
+    " echom "Filename: " . filename
+
+    " Initialize an empty list to hold the formatted components
+    let formatted = []
+
+    " Loop through the components and format them
+    for i in components[:-2]
+        if i != ''
+            call add(formatted, strpart(i, 0, 1)) " Take the first letter
+        endif
+    endfor
+
+    " echom "Formatted Components: " . string(formatted)
+
+    " Combine the formatted components with the last two and the filename
+    let formatted_path = join(formatted, '/') . (len(formatted) > 0 ? separator : '') . join(last_two, separator)
+    
+    " Remove any leading or trailing slashes
+    let clean_path = substitute(formatted_path, '^\s*' . separator . '\+', '', '')  " Remove leading slashes
+    let clean_path = substitute(clean_path, separator . '\s*$', '', '')  " Remove trailing slashes
+    " echom "Clean Path: " . clean_path
+
+    " Replace backslashes with slashes for consistency
+    let clean_path = substitute(clean_path, '\\', '/', 'g')
+
+    " Return the final path with the filename
+    return clean_path . (clean_path != '' ? '/' : '') . filename
+
 endfunction
-
-
 
 let g:lightline.component_function = {
             \ 'filename': 'LightlineFilename'}
@@ -98,15 +143,15 @@ colorscheme gruvbox
 let g:ale_lint_on_text_changed = 'always'
 let g:ale_fix_on_save = 0
 let g:ale_linters = {
-  \ 'python': ['pyright'],
-  \ 'go': ['gofmt'],
-  \ 'yaml': ['yamllint']
-  \ }
+            \ 'python': ['pyright'],
+            \ 'go': ['gofmt'],
+            \ 'yaml': ['yamllint']
+            \ }
 let g:ale_fixers = {
-  \ 'python': ['autopep8'],
-  \ 'go': ['gofmt'],
-  \ '*': ['remove_trailing_lines', 'trim_whitespace']
-  \ }
+            \ 'python': ['autopep8'],
+            \ 'go': ['gofmt'],
+            \ '*': ['remove_trailing_lines', 'trim_whitespace']
+            \ }
 let g:ale_python_flake8_options = '--ignore=E501,E402,F401,E701,E711,E712'
 let g:ale_python_autopep8_options = '--ignore=E501'
 let g:ale_yaml_yamllint_options='-d "{extends: relaxed, rules: {line-length: disable}}"'
