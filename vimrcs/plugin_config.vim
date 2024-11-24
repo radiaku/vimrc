@@ -107,8 +107,8 @@ let g:ale_fixers = {
   \ 'go': ['gofmt'],
   \ '*': ['remove_trailing_lines', 'trim_whitespace']
   \ }
-let g:ale_python_flake8_options = '--ignore=E501,E402,F401,E701,E711,E712' " ignore long-lines, import on top of the file, unused modules and statement with colon
-let g:ale_python_autopep8_options = '--ignore=E501'              " ignore long-lines for autopep8 fixer
+let g:ale_python_flake8_options = '--ignore=E501,E402,F401,E701,E711,E712'
+let g:ale_python_autopep8_options = '--ignore=E501'
 let g:ale_yaml_yamllint_options='-d "{extends: relaxed, rules: {line-length: disable}}"'
 
 " let g:airline#extensions#ale#enabled = 1
