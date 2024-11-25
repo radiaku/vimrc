@@ -6,9 +6,8 @@ map <silent> <leader>ef :NERDTreeToggle<cr>
 let g:NERDTreeIgnore = ['^node_modules$']
 let g:NERDTreeWinSize=30
 
-silent! colorscheme desert  
-
-
+" colorscheme set
+" silent! colorscheme desert  
 
 " Emmet leader key map
 let g:user_emmet_leader_key=','
@@ -40,15 +39,8 @@ else
 endif
 
 
-" Use K to show documentation in preview window.
-" nnoremap <silent> K :call <SID>show_documentation()<CR>
-
-
-
 let g:ackprg = 'rg --vimgrep --type-not sql --smart-case'
-
 let g:ack_autoclose = 1
-
 let g:ack_use_cword_for_empty_search = 1
 
 cnoreabbrev Ack Ack!
@@ -66,8 +58,6 @@ nnoremap <S-h> :bprevious<CR>
 
 
 let g:NERDTreeQuitOnOpen = 0
-
-set laststatus=2
 
 
 " Enable Lightline
@@ -129,11 +119,6 @@ endfunction
 
 let g:lightline.component_function = {
             \ 'filename': 'LightlineFilename'}
-
-set laststatus=2
-
-" let g:ctrlp_map = '<c-p>'
-" let g:ctrlp_cmd = 'CtrlP'
 
 colorscheme gruvbox
 

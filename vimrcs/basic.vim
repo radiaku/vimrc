@@ -8,6 +8,7 @@ set nocompatible
 filetype plugin on
 filetype indent on
 
+" set for global system
 set clipboard=unnamed,unnamedplus
 " vnoremap \y y:call system("pbcopy", getreg("\""))<CR>
 " nnoremap \p :call setreg("\"", system("pbpaste"))<CR>
@@ -33,7 +34,6 @@ nmap <leader>w :w!<cr>
 " :W sudo saves the file
 " (useful for handling the permission-denied error)
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
-
 
 " Set 7 lines to the cursor - when moving vertically using j/k
 set so=7
@@ -108,9 +108,6 @@ endif
 set foldcolumn=1
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Colors and Fonts
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable syntax highlighting
 syntax enable
 
@@ -144,18 +141,12 @@ set encoding=utf8
 set ffs=unix,dos,mac
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Files, backups and undo
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Turn backup off, since most stuff is in SVN, git etc. anyway...
 set nobackup
 set nowb
 set noswapfile
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Text, tab and indent related
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Use spaces instead of tabs
 set expandtab
 
@@ -184,10 +175,6 @@ set wrap "Wrap lines
 " vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Moving around, tabs, windows and buffers
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
 " map <space> /
 map <C-space> ?
 
@@ -231,14 +218,11 @@ inoremap jk <Esc>
 map <C-l> :tabnext<cr>
 map <C-h> :tabprevious<cr>
 
-map <leader>tn :tabnew<cr>
-map <leader>to :tabonly<cr>
-map <leader>tc :tabclose<cr>
-map <leader>tm :tabmove
+" map <leader>tn :tabnew<cr>
+" map <leader>to :tabonly<cr>
+" map <leader>tc :tabclose<cr>
+" map <leader>tm :tabmove
 " map <leader>t<leader> :tabnext<cr>
-
-
-
 
 " Switch CWD to the directory of the open buffer
 map <leader>cd :cd %:p:h<cr>:pwd<cr>
@@ -254,9 +238,6 @@ endtry
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
 
-""""""""""""""""""""""""""""""
-" => Status line
-""""""""""""""""""""""""""""""
 " Always show the status line
 " highlight VertSplit guibg=#181818 guifg=#996228
 highlight SLBackground guibg=#181818 guifg=#996228
@@ -264,22 +245,11 @@ highlight SLFileType guibg=indianred guifg=#663333
 highlight SLBufNumber guibg=SeaGreen guifg=#003333
 highlight SLLineNumber guibg=#80a0ff guifg=#003366
 
+" disable line this for 
 set statusline=
-" set statusline=\%#SLBackground#
-" set statusline+=\ %F
-" set statusline+=\%= " separator
-" set statusline+=\ %#SLFileType#
-" set statusline+=\ FT:\ %Y
-" set statusline+=\ %#SLBufNumber#
-" set statusline+=\ BN:\ %n
-" set statusline+=\ %#SLLineNumber#
-" set statusline+=\ LN:\ %l
 
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Editing mappings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Remap VIM 0 to first non-blank character
 map 0 ^
 
@@ -319,26 +289,17 @@ map <leader>q :e ~/buffer<cr>
 " Quickly open a markdown buffer for scribble
 map <leader>x :e ~/buffer.md<cr>
 
-
 " Highlight Yank 
 let g:highlightedyank_highlight_duration = 150
 
+" set termguicolors
 set termguicolors
 
 
-" " Set cursor shape based on mode
-" augroup CursorShape
-"     autocmd!
-"     autocmd VimEnter,InsertLeave * let &t_SI = "\e[5 q"  " Set cursor to bold in Normal mode
-"     autocmd InsertEnter * let &t_SI = "\e[2 q"  " Set cursor to thin in Insert mode
-" augroup END
-
-" autocmd InsertEnter,InsertLeave * set cul!
-
 " set cursor bold when normal, thin and hightlight when edit
-
 let &t_SI = "\<Esc>[6 q"
 let &t_SR = "\<Esc>[4 q"
 let &t_EI = "\<Esc>[2 q"
 
+" always show Status
 set laststatus=2

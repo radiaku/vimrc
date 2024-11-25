@@ -1,10 +1,6 @@
 nmap <leader>lg <cmd>:!lazygit<cr> " Toggle Lazygit
-" nmap <leader>ff <cmd>:!fzf<cr> 
 nmap <leader>co <cmd>:only<cr> " close other
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => GUI related
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set font according to system
 if has("mac") || has("macunix")
   set gfn=IBM\ Plex\ Mono:h14,Hack:h14,Source\ Code\ Pro:h15,Menlo:h15
@@ -28,19 +24,13 @@ set guioptions-=L
 set complete+=kspell
 set completeopt=menu,longest
 
-" Colorscheme
-" set background=dark
-" colorscheme peaksea
-
+" allow specific type file configuration
 set modelineexpr
 
-let g:fzf_vim = {}
+" let g:fzf_vim = {}
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Turn persistent undo on 
-"    means that you can undo even when you close a buffer/VIM
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set the undodir location
 let s:undodir = expand('~/.vimrc_runtime/temp_dirs/undodir')
 
