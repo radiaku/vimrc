@@ -104,7 +104,7 @@ function! LightlineFilename()
     let formatted = []
 
     " Loop through the components and format them
-    for i in components[:-3]
+    for i in components[:-4]
         if i != ''
             call add(formatted, strpart(i, 0, 1)) " Take the first letter
         endif
