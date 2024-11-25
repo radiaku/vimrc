@@ -24,6 +24,10 @@ set guioptions-=R
 set guioptions-=l
 set guioptions-=L
 
+" Vim AutoComplete
+set complete+=kspell
+set completeopt=menu,longest
+
 " Colorscheme
 " set background=dark
 " colorscheme peaksea

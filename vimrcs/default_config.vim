@@ -35,6 +35,8 @@ Plug 'rupurt/vim-mql5'
 Plug 'ap/vim-buftabline'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'morhetz/gruvbox'
+Plug 'vim-scripts/AutoComplPop'
+
 call plug#end()
 
 " Automatically install plugins if they were just added
