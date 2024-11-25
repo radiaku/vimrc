@@ -93,7 +93,7 @@ function! LightlineFilename()
     " echom "Components: " . string(components)
 
     " Get the last two components (directories)
-    let last_two = components[-2:] 
+    let last_two = components[-3:] 
     " echom "Last Two Components: " . string(last_two)
 
     " Get the filename
@@ -104,7 +104,7 @@ function! LightlineFilename()
     let formatted = []
 
     " Loop through the components and format them
-    for i in components[:-2]
+    for i in components[:-3]
         if i != ''
             call add(formatted, strpart(i, 0, 1)) " Take the first letter
         endif
@@ -125,6 +125,7 @@ function! LightlineFilename()
     return clean_path 
 
 endfunction
+
 
 let g:lightline.component_function = {
             \ 'filename': 'LightlineFilename'}
