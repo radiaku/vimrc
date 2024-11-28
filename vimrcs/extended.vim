@@ -83,3 +83,14 @@ augroup END
 nmap <leader>xx <cmd>:ALEPopulateQuickfix<cr>
 nmap <leader>fx <cmd>:ALEFix<cr>
 nmap gd <cmd>:ALEGoToDefinition<cr>
+
+
+" Define a function to compile the current file
+function! CompileCurrentFile()
+    let l:current_file = expand('%:p')
+    let l:command = '!"C:\\Program Files\\MetaTrader 5\\metaeditor64.exe" /compile:"' . l:current_file . '" /log:"C:\\Users\\UNIO\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\logbuild.log" /inc:"C:\\Users\\UNIO\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5"'
+    execute l:command
+endfunction
+
+" Create a shortcut (e.g., <leader>c) to compile the current file
+nnoremap <leader>cp :call CompileCurrentFile()<CR>
