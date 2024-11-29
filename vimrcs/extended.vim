@@ -85,10 +85,11 @@ nmap <leader>fx <cmd>:ALEFix<cr>
 nmap gd <cmd>:ALEGoToDefinition<cr>
 
 
-" Define a function to compile the current file
 function! CompileCurrentFile()
     let l:current_file = expand('%:p')
-    let l:command = '!"C:\\Program Files\\MetaTrader 5\\metaeditor64.exe" /compile:"' . l:current_file . '" /log:"C:\\Users\\UNIO\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\logbuild.log" /inc:"C:\\Users\\UNIO\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5"'
+    let l:log_file = $USERPROFILE . '\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\logbuild.log'
+    let l:include_dir = $USERPROFILE . '\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5'
+    let l:command = '!"C:\\Program Files\\MetaTrader 5\\metaeditor64.exe" /compile:"' . l:current_file . '" /log:"' . l:log_file . '" /inc:"' . l:include_dir . '"'
     execute l:command
 endfunction
 
