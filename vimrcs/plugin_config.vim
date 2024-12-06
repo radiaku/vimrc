@@ -17,7 +17,7 @@ let g:user_emmet_leader_key=','
 let g:prettier#autoformat = 0
 let g:prettier#config#tab_width = 2
 let g:prettier#config#trailing_comma = 'es5'
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.html Prettier
+" autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.html Prettier
 
 set encoding=utf-8
 
@@ -128,6 +128,10 @@ let g:ale_lint_on_text_changed = 'always'
 let g:ale_fix_on_save = 0
 let g:ale_linters = {
             \ 'python': ['pyright'],
+            \ 'javascript': [],
+            \ 'javascriptreact': [],
+            \ 'typescript': [],
+            \ 'typescriptreact': [],
             \ 'go': ['gofmt'],
             \ 'yaml': ['yamllint']
             \ }
@@ -139,6 +143,13 @@ let g:ale_fixers = {
 let g:ale_python_flake8_options = '--ignore=E501,E402,F401,E701,E711,E712'
 let g:ale_python_autopep8_options = '--ignore=E501'
 let g:ale_yaml_yamllint_options='-d "{extends: relaxed, rules: {line-length: disable}}"'
+
+let g:ale_fixers = {
+    \ 'javascript': [],
+    \ 'typescript': [],
+    \ 'typescriptreact': [],
+    \ 'javascriptreact': [],
+    \}
 
 " let g:airline#extensions#ale#enabled = 1
 let g:ale_sign_warning = "\uf421" "  
