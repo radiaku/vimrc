@@ -22,7 +22,7 @@ set guioptions-=L
 
 " Vim AutoComplete
 set complete+=kspell
-set completeopt=menu,longest
+set completeopt=menuone,longest
 
 " allow specific type file configuration
 set modelineexpr

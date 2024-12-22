@@ -19,7 +19,7 @@ Plug 'mattn/emmet-vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'scrooloose/nerdtree'
 " Plug 'terryma/vim-multiple-cursors'
-Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+" Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-surround'
 Plug 'dense-analysis/ale'
