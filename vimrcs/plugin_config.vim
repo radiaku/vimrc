@@ -206,7 +206,7 @@ command! -bang -nargs=* Rg call fzf#vim#grep(
 
 
 nnoremap <Leader>fs :Rg<cr>
-nnoremap <Leader>fb :Buffers<cr>
+nnoremap <Leader>fa :Buffers<cr>
 
 
 
