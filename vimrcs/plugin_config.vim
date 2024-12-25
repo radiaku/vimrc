@@ -47,8 +47,8 @@ cnoreabbrev Ack Ack!
 nnoremap <Leader>/ :Ack!<Space>
 nnoremap <Leader>fs :Ack!<Space>
 
-nnoremap <leader>ff :CtrlP<CR> 
-nnoremap <leader>fb :CtrlPBuffer<CR> 
+nnoremap <leader>ff :Files<CR> 
+" nnoremap <leader>fb :CtrlPBuffer<CR> 
 
 nnoremap <silent> [q :cprevious<CR>
 nnoremap <silent> ]q :cnext<CR>
