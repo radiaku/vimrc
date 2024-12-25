@@ -190,20 +190,21 @@ let g:ale_debug = 1
 
 
 
-command! -bang -nargs=* Rg call fzf#vim#grep(
-  \   'rg
-        \ --column
-        \ --line-number
-        \ --no-heading
-        \ --fixed-strings
-        \ --ignore-case
-        \ --hidden
-        \ --follow
-        \ --glob "!.git/*"
-        \ --color "always" '.shellescape(<q-args>),
-  \   fzf#vim#with_preview('right:50%:hidden', '?'),
-  \   <bang>0)
+" command! -bang -nargs=* Rg call fzf#vim#grep(
+"   \   'rg
+"         \ --column
+"         \ --line-number
+"         \ --no-heading
+"         \ --fixed-strings
+"         \ --ignore-case
+"         \ --hidden
+"         \ --follow
+"         \ --glob "!.git/*"
+"         \ --color "always" '.shellescape(<q-args>),
+"   \   fzf#vim#with_preview('right:50%:hidden', '?'),
+"   \   <bang>0)
 
+command! -bang -nargs=* Rg call fzf#vim#grep("rg --column --line-number --no-heading --color=always --smart-case --glob '!.git/*' -- ".fzf#shellescape(<q-args>), fzf#vim#with_preview(), <bang>0)
 
 nnoremap <Leader>fs :Rg<cr>
 nnoremap <Leader>fa :Buffers<cr>
