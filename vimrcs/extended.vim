@@ -95,3 +95,4 @@ endfunction
 
 " Create a shortcut (e.g., <leader>c) to compile the current file
 nnoremap <leader>cp :call CompileCurrentFile()<CR>
+

@@ -45,7 +45,7 @@ let g:ack_use_cword_for_empty_search = 1
 
 cnoreabbrev Ack Ack!
 nnoremap <Leader>/ :Ack!<Space>
-nnoremap <Leader>fs :Ack!<Space>
+" nnoremap <Leader>fs :Ack!<Space>
 
 nnoremap <leader>ff :Files<CR> 
 " nnoremap <leader>fb :CtrlPBuffer<CR> 
@@ -187,3 +187,26 @@ let g:ale_completion_symbols = {
             \ }
 
 let g:ale_debug = 1
+
+
+
+command! -bang -nargs=* Rg call fzf#vim#grep(
+  \   'rg
+        \ --column
+        \ --line-number
+        \ --no-heading
+        \ --fixed-strings
+        \ --ignore-case
+        \ --hidden
+        \ --follow
+        \ --glob "!.git/*"
+        \ --color "always" '.shellescape(<q-args>),
+  \   fzf#vim#with_preview('right:50%:hidden', '?'),
+  \   <bang>0)
+
+
+nnoremap <Leader>fs :Rg<cr>
+nnoremap <Leader>fb :Buffers<cr>
+
+
+
