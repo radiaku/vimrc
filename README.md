@@ -36,4 +36,18 @@ endif
 EOF
 ```
 
+then open vim
+
+```
+:PlugInstall
+```
+
+wait until done and then: 
+
+```
+:source ~/.vimrc
+```
+
+done
+
 
