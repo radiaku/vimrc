@@ -37,6 +37,7 @@ Plug 'ap/vim-buftabline'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'morhetz/gruvbox'
 Plug 'vim-scripts/AutoComplPop'
+Plug 'michaeljsmith/vim-indent-object'
 " Plug 'prettier/vim-prettier', {
 "   \ 'do': 'npm install',
 "   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
