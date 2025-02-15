@@ -14,10 +14,10 @@ set clipboard=unnamed,unnamedplus
 " nnoremap \p :call setreg("\"", system("pbpaste"))<CR>
 
 " Copy the current line to the unnamed register
-nnoremap yy V"+y
+" nnoremap yy V"+y
 
 " nnoremap p "+p
-nnoremap p "+p
+" nnoremap p "+p
 
 
 " Set to auto read when a file is changed from the outside
