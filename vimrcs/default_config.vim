@@ -16,13 +16,11 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mattn/emmet-vim'
-:if empty(system('go version'))
-\| echo "Go is not installed."
-\| else
-\|   Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-\|   silent! call plug#end() " Ensure that the plugin manager is initialized
-\|   PlugInstall
-\| endif
+if empty(system('go version'))
+    echo "Go is not installed."
+else
+    Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+endif
 Plug 'scrooloose/nerdtree'
 " Plug 'terryma/vim-multiple-cursors'
 " Plug 'mg979/vim-visual-multi', {'branch': 'master'}
