@@ -190,47 +190,9 @@ let g:ale_debug = 1
 
 
 
-" command! -bang -nargs=* Rg call fzf#vim#grep(
-"   \   'rg
-"         \ --column
-"         \ --line-number
-"         \ --no-heading
-"         \ --fixed-strings
-"         \ --ignore-case
-"         \ --hidden
-"         \ --follow
-"         \ --glob "!.git/*"
-"         \ --color "always" '.shellescape(<q-args>),
-"   \   fzf#vim#with_preview('right:50%:hidden', '?'),
-"   \   <bang>0)
+" Custom command to search using Ripgrep and FZF
 
-" set shell=pwsh
-" set shellcmdflag=-NoLogo\ -NoProfile\ -ExecutionPolicy\ RemoteSigned\ -Command
 
-" function! RgWrapper(...)
-"     if has('win32') || has('win64')
-"         " Escape arguments properly for Windows
-"         return 'rg --column --line-number --no-heading --color=always --smart-case --glob ''!.git/*'' -- ' . shellescape(join(a:000, ' '))
-"     else
-"         return 'rg --column --line-number --no-heading --color=always --smart-case --glob ''!.git/*'' -- ' . fzf#shellescape(join(a:000, ' '))
-"     endif
-" endfunction
-
-" command! -bang -nargs=* Rg call fzf#vim#grep(RgWrapper(<q-args>), fzf#vim#with_preview(), <bang>0)
-
-" command! -bang -nargs=* Rg call fzf#vim#grep("rg --column --line-number --no-heading --color=always --smart-case --glob '!.git/*' -- ".fzf#shellescape(<q-args>), fzf#vim#with_preview(), <bang>0)
-
-" command! -bang -nargs=* Rg call fzf#vim#grep(
-"     \ "rg --column --line-number --no-heading --color=always --smart-case --glob '!.git/*' -- " . shellescape(
-"     \ (empty(<q-args>) ? '.*' : <q-args>)), 
-"     \ fzf#vim#with_preview(), <bang>0)
-
-" let g:fzf_files_options = '--hidden --glob "!{.git,node_modules}/*"'
-
-command! -nargs=* FZFFiles call fzf#run(fzf#wrap({
-\   'source': 'rg --files --hidden --glob "!{.git,node_modules}/*"',
-\   'options': '--preview "bat --style=numbers --color=always --line-range :300 {}"'}))
-" nnoremap <Leader>fs :FZF<cr>
 nnoremap <Leader>fs :Files<cr>
 nnoremap <Leader>fa :Buffers<cr>
 
