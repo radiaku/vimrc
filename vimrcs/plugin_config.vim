@@ -193,7 +193,7 @@ let g:ale_debug = 1
 " Custom command to search using Ripgrep and FZF
 
 
-nnoremap <Leader>fs :Files<cr>
+nnoremap <Leader>fs :Rg<cr>
 nnoremap <Leader>fa :Buffers<cr>
 
 
