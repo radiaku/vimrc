@@ -3,6 +3,13 @@
 map <silent> <leader>ee :NERDTreeToggle<cr>
 map <silent> <leader>ef :NERDTreeToggle<cr>
 
+" AutoComplPop tab completion configuration
+inoremap <expr> <Tab> pumvisible() ? "\<C-y>" : "\<Tab>"
+
+" AutoComplPop navigation mappings
+inoremap <expr> <Down> pumvisible() ? "\<C-n>" : "\<Down>"
+inoremap <expr> <Up> pumvisible() ? "\<C-p>" : "\<Up>"
+
 let g:NERDTreeIgnore = ['^node_modules$']
 let g:NERDTreeWinSize=30
 
