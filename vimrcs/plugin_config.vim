@@ -39,7 +39,7 @@ else
 endif
 
 
-let g:ackprg = 'rg --vimgrep --type-not sql --smart-case --glob=\!.git --glob=\!plugged --glob=\!autoload --glob=\!temp_dirs --glob=\!myvenv --glob=\!venv'
+let g:ackprg = 'rg --vimgrep --type-not sql --smart-case --glob=\!.git --glob=\!plugged --glob=\!autoload --glob=\!temp_dirs --glob=\!myvenv --glob=\!venv --glob=\!node_modules'
 let g:ack_autoclose = 1
 let g:ack_use_cword_for_empty_search = 1
 
