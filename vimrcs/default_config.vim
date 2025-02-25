@@ -16,9 +16,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mattn/emmet-vim'
-if empty(system('go version'))
-    echo "Go is not installed."
-else
+if !empty(system('go version'))
     Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 endif
 Plug 'scrooloose/nerdtree'
