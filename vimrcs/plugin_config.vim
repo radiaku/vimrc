@@ -46,9 +46,33 @@ else
 endif
 
 
-let g:ackprg = 'rg --vimgrep --type-not sql --smart-case --glob=\!.git --glob=\!plugged --glob=\!autoload --glob=\!temp_dirs --glob=\!myvenv --glob=\!venv --glob=\!node_modules'
+" let g:rg_command = 'rg --vimgrep --type-not sql --smart-case --glob=\!.git --glob=\!plugged --glob=\!autoload --glob=\!temp_dirs --glob=\!myvenv --glob=\!venv --glob=\!node_modules'
+
+" let g:ackprg = 'rg --vimgrep --type-not sql --smart-case --glob=\!.git --glob=\!plugged --glob=\!autoload --glob=\!temp_dirs --glob=\!myvenv --glob=\!venv --glob=\!node_modules'
 let g:ack_autoclose = 1
 let g:ack_use_cword_for_empty_search = 1
+
+" if executable('rg')
+"     set grepprg=rg\ --vimgrep\ --hidden\ --glob\ '!.git'\ --glob\ '!autoload'\ --glob\ '!plugged'\ --glob\ '!temp_dirs'\ --glob\ '!myenv'\ --glob\ '!venv'\ --glob\ '!node_modules'
+" endif
+
+if executable('rg')
+  let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --follow --glob "!.git/*"'
+  set grepprg=rg\ --vimgrep
+  command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>).'| tr -d "\017"', 1, <bang>0)
+
+command! -bang -nargs=* Rg
+  \ call fzf#vim#grep(
+  \   'rg --column --line-number --no-heading --color=always --smart-case --hidden '
+  \   . '--glob "!.git" --glob "!autoload" --glob "!plugged" --glob "!temp_dirs" '
+  \   . '--glob "!myenv" --glob "!venv" --glob "!node_modules" '
+  \   . shellescape(<q-args>), 1,
+  \   {'options': '--delimiter : --nth 4..'}, <bang>0)
+  " " Rg
+  " nnoremap <silent> <Leader>fa :Find<CR> 
+  " " Rg current worda
+  " nnoremap <Leader>fw :Rg <C-R><C-W><space>
+endif
 
 cnoreabbrev Ack Ack!
 nnoremap <Leader>/ :Ack!<Space>
