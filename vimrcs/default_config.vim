@@ -22,7 +22,7 @@ endif
 Plug 'scrooloose/nerdtree'
 " Plug 'terryma/vim-multiple-cursors'
 " Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-Plug 'tpope/vim-eunuch'
+" Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-surround'
 Plug 'dense-analysis/ale'
 Plug 'prabirshrestha/vim-lsp'

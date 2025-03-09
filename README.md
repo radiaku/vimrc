@@ -28,7 +28,6 @@ let data_dir = expand('~/.vimrc_runtime')
 source ~/.vimrc_runtime/vimrcs/default_config.vim
 
 if !empty(glob(data_dir . '/plugged/*'))
-  source ~/.vimrc_runtime/vimrcs/plugin.vim
   source ~/.vimrc_runtime/vimrcs/basic.vim
   source ~/.vimrc_runtime/vimrcs/extended.vim
   source ~/.vimrc_runtime/vimrcs/plugin_config.vim
