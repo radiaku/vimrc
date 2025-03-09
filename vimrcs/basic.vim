@@ -1,5 +1,5 @@
 " Sets how many lines of history VIM has to remember
-set history=500
+set history=1000
 
 " Don't make vim vi-compatibile
 set nocompatible
@@ -303,3 +303,4 @@ let &t_EI = "\<Esc>[2 q"
 
 " always show Status
 set laststatus=2
+set timeoutlen=200

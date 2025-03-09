@@ -1,5 +1,6 @@
 """" PLUGIN RELATED TWEAKS
 " [1]
+let g:user_emmet_leader_key='<C-e>'  " This will use Ctrl+e instead of comma
 map <silent> <leader>ee :NERDTreeToggle<cr>
 map <silent> <leader>ef :NERDTreeToggle<cr>
 
