@@ -303,4 +303,5 @@ let &t_EI = "\<Esc>[2 q"
 
 " always show Status
 set laststatus=2
-set timeoutlen=200
+set timeoutlen=300
+

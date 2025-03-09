@@ -1,6 +1,8 @@
 """" PLUGIN RELATED TWEAKS
 " [1]
-let g:user_emmet_leader_key='<C-e>'  " This will use Ctrl+e instead of comma
+
+" let g:user_emmet_leader_key='<C-Z>'
+let g:user_emmet_leader_key='<C-e>'
 map <silent> <leader>ee :NERDTreeToggle<cr>
 map <silent> <leader>ef :NERDTreeToggle<cr>
 
@@ -18,7 +20,7 @@ let g:NERDTreeWinSize=30
 " silent! colorscheme desert  
 
 " Emmet leader key map
-let g:user_emmet_leader_key=','
+" let g:user_emmet_leader_key=','
 
 " [9]
 " Enable vim-prettier to run in files without requiring the "@format" doc tag
