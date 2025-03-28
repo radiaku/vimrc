@@ -16,6 +16,8 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mattn/emmet-vim'
+Plug 'dusans/vim-hardmode'
+
 if !empty(system('go version'))
     Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 endif

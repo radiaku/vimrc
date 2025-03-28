@@ -1,6 +1,7 @@
 nmap <leader>lg <cmd>:!lazygit<cr> " Toggle Lazygit
 nmap <leader>co <cmd>:only<cr> " close other
 
+
 " Set font according to system
 if has("mac") || has("macunix")
   set gfn=IBM\ Plex\ Mono:h14,Hack:h14,Source\ Code\ Pro:h15,Menlo:h15
