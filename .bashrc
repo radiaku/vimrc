@@ -1,6 +1,7 @@
 # ln -s ~/.config/nvim/.bashrc ~/.bashrc
 # or
 # mv ~/.config/nvim/.bashrc ~/.bashrc
+# cp ~/.config/nvim/.bashrc ~/.bashrc
 #
 # /ubuntu
 # sudo apt install git fzf zoxide ripgrep fd-find tree untar tar p7zip-full
