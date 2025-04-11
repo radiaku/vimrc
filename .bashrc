@@ -4,6 +4,7 @@
 #
 # /ubuntu
 # sudo apt install git fzf zoxide ripgrep fd-find tree untar tar p7zip-full
+# sudo ln --symbolic $(which fdfind) /usr/local/bin/fd
 #
 # /centos
 # sudo yum install epel-release
@@ -17,6 +18,13 @@
 # cp ./fd.1 /usr/local/share/man/man1/
 #
 
+export HISTSIZE=5000  # Number of commands kept in memory
+export HISTFILESIZE=100000  # Number of commands kept in the history file
+export HISTCONTROL=ignoredups:erasedups  # Ignore duplicate commands
+
+export TERM="xterm-256color"
+
+alias py3='python3'
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
@@ -30,9 +38,12 @@ then
 fi
 export PATH
 
+
 # Function to sanitize session names
 sanitize_session_name() {
-  echo "$1" | tr -c '[:alnum:]_.-' '_'
+  local trimmed="$(echo -n "$1" | xargs)"
+  local cleaned="$(echo -n "$trimmed" | tr -c '[:alnum:]_.-' '_')"
+  echo "${cleaned%"_"}"
 }
 
 # Function to manage tmux sessions
@@ -44,13 +55,15 @@ manage_tmux_session() {
     if tmux ls | grep -q "^$1:"; then
       tmux attach -t "$1"
     else
-      tmux new-session -s "$1" -c "$2"
+      tmux new-session -s "$1"
+      tmux send-keys "cd $2" C-m  # Change directory after creating the session
     fi
   else
     if tmux ls | grep -q "^$1:"; then
       tmux switch-client -t "$1"
     else 
-      tmux new-session -ds "$1" -c "$2"
+      tmux new-session -ds "$1"
+      tmux send-keys "cd $2" C-m  # Change directory after creating the session
       tmux switch-client -t "$1"
     fi
   fi
@@ -85,7 +98,11 @@ fzf-cd() {
 
   test -f "$target" && target="${target%/*}"
 
-  session_name="fzf-$(sanitize_session_name "$(basename "$target")")"
+  parent_dir="$(basename "$(dirname "$target")")"
+  prefix="${parent_dir:0:1}"  # First letter
+  basename="$(basename "$target")"
+  session_name="fzf-${prefix}_${basename}"
+  session_name="$(sanitize_session_name "$session_name")"
 
   manage_tmux_session "$session_name" "$target" || {
     echo "Failed to create or attach to tmux session."
@@ -93,6 +110,47 @@ fzf-cd() {
   }
 }
 
+
+# Bind Ctrl+F to execute fzf-cd
+bind -x '"\C-f": fzf-cd'
+
+function jump_to_tmux_session() {
+  if [ -z "$TMUX" ]; then
+    local selected_session
+    selected_session=$(tmux list-sessions -F '#{session_name}' | \
+      sort -r | \
+      fzf --reverse --header "Jump to session" \
+          --preview 'tmux capture-pane -t {} -p | head -20' \
+          --bind 'ctrl-d:execute-silent(tmux kill-session -t {})+reload(tmux list-sessions -F "#{session_name}" | sort -r)')
+
+    if [ -n "$selected_session" ]; then
+      manage_tmux_session "$selected_session" || {
+        echo "Failed to attach to tmux session."
+        return 1
+      }
+    else
+      echo "No session selected."
+    fi
+  else
+    tmux list-sessions -F '#{session_name}' | \
+      sort -r | \
+      fzf --reverse --header "Jump to session" \
+          --preview 'tmux capture-pane -pt {} | head -20' \
+          --bind 'ctrl-d:execute-silent(tmux kill-session -t {})+reload(tmux list-sessions -F "#{session_name}" | sort -r)' | \
+      xargs -r tmux switch-client -t
+  fi
+}
+
+
+# Bind Alt+l to the function
+bind -x '"\C-L": jump_to_tmux_session'
+
+
+
+# ff() {
+#     aerospace list-windows --all | fzf --bind 'enter:execute(bash -c "aerospace focus --window-id {1}")+abort'
+# }
+# bind -x '"\C-A": ff'
 
 # Function to enter alternate screen mode and clear the screen
 ias() {
@@ -107,11 +165,6 @@ cas() {
     clear
     printf '\e[3J'
 }
-
-
-# Bind Ctrl+F to execute fzf-cd
-bind -x '"\C-f": fzf-cd'
-
 
 eval "$(zoxide init bash)"
 export PYENV_ROOT="$HOME/.pyenv"
