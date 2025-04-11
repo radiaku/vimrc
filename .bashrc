@@ -1,7 +1,7 @@
-# ln -s ~/.config/nvim/.bashrc ~/.bashrc
+# ln -s ~/.vimrc_runtime/.bashrc ~/.bashrc
 # or
-# mv ~/.config/nvim/.bashrc ~/.bashrc
-# cp ~/.config/nvim/.bashrc ~/.bashrc
+# mv ~/.vimrc_runtime/.bashrc ~/.bashrc
+# cp ~/.vimrc_runtime/.bashrc ~/.bashrc
 #
 # /ubuntu
 # sudo apt install git fzf zoxide ripgrep fd-find tree untar tar p7zip-full
