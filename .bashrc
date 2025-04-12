@@ -21,26 +21,14 @@
 # cp ./fd.1 /usr/local/share/man/man1/
 #
 
-export HISTSIZE=5000  # Number of commands kept in memory
-export HISTFILESIZE=100000  # Number of commands kept in the history file
-export HISTCONTROL=ignoredups:erasedups  # Ignore duplicate commands
-
+# export TERM='xterm-256color'
 export TERM="xterm-256color"
+export EDITOR='vim'
+export VISUAL='vim'
 
+alias nv='nvim'
+alias v='vim'
 alias py3='python3'
-
-# Source global definitions
-if [ -f /etc/bashrc ]; then
-    . /etc/bashrc
-fi
-
-# User specific environment
-if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
-then
-    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
-fi
-export PATH
-
 
 # Function to sanitize session names
 sanitize_session_name() {
@@ -169,10 +157,13 @@ cas() {
     printf '\e[3J'
 }
 
-eval "$(zoxide init bash)"
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init - bash)"
+
+export PATH=~/.local/bin/:$PATH
+eval "$(rbenv init - --no-rehash zsh)"
+
+export PATH=$PATH:$HOME/go/bin
+eval "$(zoxide init zsh)"
+
 
 
 
