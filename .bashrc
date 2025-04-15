@@ -164,6 +164,21 @@ eval "$(rbenv init - --no-rehash zsh)"
 export PATH=$PATH:$HOME/go/bin
 eval "$(zoxide init zsh)"
 
+# Load system-wide bash completion
+if [ -f /etc/profile.d/bash_completion.sh ]; then
+    source /etc/profile.d/bash_completion.sh
+fi
+
+# Enable history search with up/down arrows (only if commented out above)
+bind '"\e[A": history-search-backward'
+bind '"\e[B": history-search-forward'
+
+# Load fzf keybindings (for fuzzy history search with Ctrl+R, Ctrl+T, etc.)
+if [ -f /usr/share/doc/fzf/examples/key-bindings.bash ]; then
+    source /usr/share/doc/fzf/examples/key-bindings.bash
+fi
+
+
 
 
 
