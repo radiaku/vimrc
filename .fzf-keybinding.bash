@@ -1,3 +1,4 @@
+# ln -s ~/.vimrc_runtime/.fzf-keybinding.bash ~/.fzf-keybinding.bash
 #     ____      ____
 #    / __/___  / __/
 #   / /_/_  / / /_
