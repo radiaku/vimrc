@@ -175,10 +175,9 @@ bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
 
 # Load fzf keybindings (for fuzzy history search with Ctrl+R, Ctrl+T, etc.)
-if [ -f /usr/share/doc/fzf/examples/key-bindings.bash ]; then
-    source /usr/share/doc/fzf/examples/key-bindings.bash
+if [ -f $HOME/.fzf-keybinding.bash ]; then
+    source $HOME/.fzf-keybinding.bash
 fi
-
 
 
 
