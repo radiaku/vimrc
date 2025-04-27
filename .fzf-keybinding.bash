@@ -19,11 +19,30 @@ if [[ $- =~ i ]]; then
 # ------------
 
 __fzf_defaults() {
-  # $1: Prepend to FZF_DEFAULT_OPTS_FILE and FZF_DEFAULT_OPTS
-  # $2: Append to FZF_DEFAULT_OPTS_FILE and FZF_DEFAULT_OPTS
-  echo "--height ${FZF_TMUX_HEIGHT:-40%} --min-height 20+ --bind=ctrl-z:ignore $1"
-  command cat "${FZF_DEFAULT_OPTS_FILE-}" 2> /dev/null
-  echo "${FZF_DEFAULT_OPTS-} $2"
+  local prepend="$1"
+  local append="$2"
+
+  local height_opt
+  if [[ -n "$TMUX" ]]; then
+    height_opt="--height ${FZF_TMUX_HEIGHT:-40%}"  # tmux accepts %
+  else
+    # Outside tmux: no %
+    local height="${FZF_TMUX_HEIGHT:-40}"
+    height="${height/\%/}"  # just in case
+    height_opt="--height ${height}"
+  fi
+
+  local opts="$height_opt --bind=ctrl-z:ignore"
+
+  if [[ -n "${FZF_DEFAULT_OPTS_FILE-}" && -f "$FZF_DEFAULT_OPTS_FILE" ]]; then
+    opts+=" $(<"$FZF_DEFAULT_OPTS_FILE")"
+  fi
+
+  if [[ -n "${FZF_DEFAULT_OPTS-}" ]]; then
+    opts+=" ${FZF_DEFAULT_OPTS}"
+  fi
+
+  echo "$prepend $opts $append" | xargs
 }
 
 __fzf_select__() {
