@@ -160,7 +160,7 @@ cas() {
 
 export PATH=~/.local/bin/:$PATH
 export PATH=~/local/bin/:$PATH
-eval "$(rbenv init - --no-rehash zsh)"
+# eval "$(rbenv init - --no-rehash zsh)"
 
 export PATH=$PATH:$HOME/go/bin
 eval "$(zoxide init bash)"
