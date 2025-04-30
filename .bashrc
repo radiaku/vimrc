@@ -4,6 +4,7 @@
 # cp ~/.vimrc_runtime/.bashrc ~/.bashrc
 #
 # sudo ln --symbolic $(which fdfind) /usr/local/bin/fd
+# sudo ln --symbolic $(which fd-find) /usr/local/bin/fd
 #
 # /ubuntu
 # sudo apt install git fzf zoxide ripgrep fd-find tree untar tar p7zip-full
