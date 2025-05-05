@@ -77,7 +77,7 @@ fzf-cd() {
 
   fd_options=(
     --type directory
-    --max-depth 2
+    --max-depth 1
     --exclude .git
     --exclude node_modules
   )
