@@ -187,6 +187,16 @@ if [ -f $HOME/.fzf-keybinding.bash ]; then
     source $HOME/.fzf-keybinding.bash
 fi
 
+__fzf_history_search() {
+  local selected
+  selected=$(history | fzf --tac +s --tiebreak=index --ansi --no-sort --reverse --prompt='History> ' | sed 's/ *[0-9]* *//')
+  if [ -n "$selected" ]; then
+    READLINE_LINE="$selected"
+    READLINE_POINT=${#READLINE_LINE}
+  fi
+}
+bind -x '"\C-r": __fzf_history_search'
+
 
 
 
