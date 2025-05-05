@@ -31,6 +31,12 @@ alias nv='nvim'
 alias v='vim'
 alias py3='python3'
 
+HISTSIZE=10000
+HISTFILESIZE=200000
+HISTCONTROL=ignoreboth
+shopt -s histappend
+shopt -s checkwinsize
+
 # Function to sanitize session names
 sanitize_session_name() {
   local trimmed="$(echo -n "$1" | xargs)"
