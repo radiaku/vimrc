@@ -201,15 +201,19 @@ if [ -f /usr/share/doc/fzf/examples/key-bindings.bash ]; then
 else 
     source $HOME/.fzf-keybinding.bash
 
-    _ffzf_history_search() {
-      local selected
-      selected=$(history | fzf --tac +s --tiebreak=index --ansi --no-sort --reverse --prompt='History> ' | sed 's/ *[0-9]* *//')
-      if [ -n "$selected" ]; then
-        READLINE_LINE="$selected"
-        READLINE_POINT=${#READLINE_LINE}
-      fi
+    __fzf_history_search() {
+        local query="${READLINE_LINE}"
+        local selected
+        selected=$(history | fzf --tac +s --tiebreak=index --ansi --no-sort --reverse \
+            --prompt='History> ' --query="$query" | sed 's/ *[0-9]* *//')
+        if [ -n "$selected" ]; then
+            READLINE_LINE="$selected"
+            READLINE_POINT=${#READLINE_LINE}
+        fi
     }
-    bind -x '"\C-r": __fzf_history_search'
+
+    bind -x '"\C-r": __fzf_history_search'   
+
 fi
 
 
