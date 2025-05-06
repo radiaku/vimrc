@@ -9,7 +9,8 @@ filetype plugin on
 filetype indent on
 
 " set for global system
-set clipboard=unnamed,unnamedplus
+" set clipboard=unnamed,unnamedplus
+set clipboard=unnamedplus
 " vnoremap \y y:call system("pbcopy", getreg("\""))<CR>
 " nnoremap \p :call setreg("\"", system("pbpaste"))<CR>
 
