@@ -37,6 +37,14 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 shopt -s checkwinsize
 
+if [ "$color_prompt" = yes ]; then
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\n\$ '
+else
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\n\$ '
+fi
+unset color_prompt force_color_prompt
+
+
 # Function to sanitize session names
 sanitize_session_name() {
   local trimmed="$(echo -n "$1" | xargs)"
@@ -168,6 +176,11 @@ cas() {
 
 export PATH=~/.local/bin/:$PATH
 export PATH=~/local/bin/:$PATH
+
+export PATH=$PATH:/usr/local/go/bin
+export PATH="$HOME/miniconda3/bin:$PATH"
+source "$HOME/miniconda3/etc/profile.d/conda.sh"
+
 # eval "$(rbenv init - --no-rehash zsh)"
 
 export PATH=$PATH:$HOME/go/bin
@@ -187,17 +200,18 @@ if [ -f /usr/share/doc/fzf/examples/key-bindings.bash ]; then
     source /usr/share/doc/fzf/examples/key-bindings.bash
 else 
     source $HOME/.fzf-keybinding.bash
+
+    _ffzf_history_search() {
+      local selected
+      selected=$(history | fzf --tac +s --tiebreak=index --ansi --no-sort --reverse --prompt='History> ' | sed 's/ *[0-9]* *//')
+      if [ -n "$selected" ]; then
+        READLINE_LINE="$selected"
+        READLINE_POINT=${#READLINE_LINE}
+      fi
+    }
+    bind -x '"\C-r": __fzf_history_search'
 fi
 
-__fzf_history_search() {
-  local selected
-  selected=$(history | fzf --tac +s --tiebreak=index --ansi --no-sort --reverse --prompt='History> ' | sed 's/ *[0-9]* *//')
-  if [ -n "$selected" ]; then
-    READLINE_LINE="$selected"
-    READLINE_POINT=${#READLINE_LINE}
-  fi
-}
-bind -x '"\C-r": __fzf_history_search'
 
 
 
