@@ -15,9 +15,9 @@ set clipboard=unnamedplus
 " nnoremap \p :call setreg("\"", system("pbpaste"))<CR>
 
 " Copy the current line to the unnamed register
-nnoremap yy V"+y
+" nnoremap yy V"+y
 
-nnoremap p "+p
+" nnoremap p "+p
 " nnoremap p "+p
 
 
@@ -288,7 +288,7 @@ noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 map <leader>q :e ~/buffer<cr>
 
 " Quickly open a markdown buffer for scribble
-map <leader>x :e ~/buffer.md<cr>
+" map <leader>x :e ~/buffer.md<cr>
 
 " Highlight Yank 
 let g:highlightedyank_highlight_duration = 150
@@ -305,4 +305,6 @@ let &t_EI = "\<Esc>[2 q"
 " always show Status
 set laststatus=2
 set timeoutlen=300
+
+autocmd VimLeave * call system("echo -n '" . escape(getreg('""'), "'") . "' | xclip -selection clipboard")
 
