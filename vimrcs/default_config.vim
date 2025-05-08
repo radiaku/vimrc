@@ -22,7 +22,8 @@ Plug 'dusans/vim-hardmode'
 if !empty(system('go version'))
     Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 endif
-Plug 'scrooloose/nerdtree'
+" Plug 'scrooloose/nerdtree'
+Plug 'preservim/nerdtree'
 " Plug 'terryma/vim-multiple-cursors'
 " Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 " Plug 'tpope/vim-eunuch'

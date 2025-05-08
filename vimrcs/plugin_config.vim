@@ -6,7 +6,6 @@ let g:user_emmet_leader_key='<C-e>'
 map <silent> <leader>ee :NERDTreeToggle<cr>
 map <silent> <leader>ef :NERDTreeToggle<cr>
 
-autocmd FileType nerdtree nmap <buffer> H I
 
 " AutoComplPop tab completion configuration
 inoremap <expr> <Tab> pumvisible() ? "\<C-y>" : "\<Tab>"
@@ -229,6 +228,4 @@ let g:ale_debug = 1
 
 nnoremap <Leader>fs :Rg<cr>
 nnoremap <Leader>fa :Buffers<cr>
-
-
 
