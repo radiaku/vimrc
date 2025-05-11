@@ -198,23 +198,22 @@ bind '"\e[B": history-search-forward'
 # Load fzf keybindings (for fuzzy history search with Ctrl+R, Ctrl+T, etc.)
 if [ -f /usr/share/doc/fzf/examples/key-bindings.bash ]; then
     source /usr/share/doc/fzf/examples/key-bindings.bash
-else 
-    source $HOME/.fzf-keybinding.bash
-
-    __fzf_history_search() {
-        local query="${READLINE_LINE}"
-        local selected
-        selected=$(history | fzf --tac +s --tiebreak=index --ansi --no-sort --reverse \
-            --prompt='History> ' --query="$query" | sed 's/ *[0-9]* *//')
-        if [ -n "$selected" ]; then
-            READLINE_LINE="$selected"
-            READLINE_POINT=${#READLINE_LINE}
-        fi
-    }
-
-    bind -x '"\C-r": __fzf_history_search'   
-
+else
+    source "$HOME/.fzf-keybinding.bash"
 fi
+
+__fzf_history_search() {
+    local query="${READLINE_LINE}"
+    local selected
+    selected=$(history | fzf --tac +s --tiebreak=index --ansi --no-sort --reverse \
+        --prompt='History> ' --query="$query" | sed 's/ *[0-9]* *//')
+    if [ -n "$selected" ]; then
+        READLINE_LINE="$selected"
+        READLINE_POINT=${#READLINE_LINE}
+    fi
+}
+
+bind -x '"\C-r": __fzf_history_search'
 
 # Ensure only one ssh-agent is running and set the correct environment variables
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then

@@ -307,4 +307,8 @@ set laststatus=2
 set timeoutlen=300
 
 autocmd VimLeave * call system("echo -n '" . escape(getreg('""'), "'") . "' | xclip -selection clipboard")
-
+" Yank into all these at once:
+"     vim y/p register
+"     wayland primary
+"     wayland clipboard
+xnoremap <silent> <leader>y y:call system("wl-copy --trim-newline", @*)<cr>:call system("wl-copy -p --trim-newline", @*)<cr>
