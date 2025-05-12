@@ -306,9 +306,19 @@ let &t_EI = "\<Esc>[2 q"
 set laststatus=2
 set timeoutlen=300
 
-autocmd VimLeave * call system("echo -n '" . escape(getreg('""'), "'") . "' | xclip -selection clipboard")
-" Yank into all these at once:
-"     vim y/p register
-"     wayland primary
-"     wayland clipboard
-xnoremap <silent> <leader>y y:call system("wl-copy --trim-newline", @*)<cr>:call system("wl-copy -p --trim-newline", @*)<cr>
+" autocmd VimLeave * call system("echo -n '" . escape(getreg('""'), "'") . "' | xclip -selection clipboard")
+" " Yank into all these at once:
+" "     vim y/p register
+" "     wayland primary
+" "     wayland clipboard
+" xnoremap <silent> <leader>y y:call system("wl-copy --trim-newline", @*)<cr>:call system("wl-copy -p --trim-newline", @*)<cr>
+" nnoremap <silent> <leader>p :call system("wl-paste -p")<cr>
+" xnoremap <silent> <leader>y y:call system("xclip -selection clipboard", @*)<cr>
+" nnoremap <silent> <leader>p :call system("xclip -selection clipboard -o")<cr>
+"
+
+
+
+
+
+
