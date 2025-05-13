@@ -6,6 +6,9 @@ let g:user_emmet_leader_key='<C-e>'
 map <silent> <leader>ee :NERDTreeToggle<cr>
 map <silent> <leader>ef :NERDTreeToggle<cr>
 
+" remove annoying leading ^G
+let g:NERDTreeNodeDelimiter = "\u00a0"
+
 
 " AutoComplPop tab completion configuration
 inoremap <expr> <Tab> pumvisible() ? "\<C-y>" : "\<Tab>"
