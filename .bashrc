@@ -66,12 +66,6 @@ fi
 unset color_prompt force_color_prompt
 
 
-# Function to sanitize session names
-sanitize_session_name() {
-  local trimmed="$(echo -n "$1" | xargs)"
-  local cleaned="$(echo -n "$trimmed" | tr -c '[:alnum:]_.-' '_')"
-  echo "${cleaned%"_"}"
-}
 
 # Function to manage tmux sessions
 manage_tmux_session() {
