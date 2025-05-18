@@ -311,11 +311,31 @@ set timeoutlen=300
 " "     vim y/p register
 " "     wayland primary
 " "     wayland clipboard
-" xnoremap <silent> <leader>y y:call system("wl-copy --trim-newline", @*)<cr>:call system("wl-copy -p --trim-newline", @*)<cr>
-" nnoremap <silent> <leader>p :call system("wl-paste -p")<cr>
-" xnoremap <silent> <leader>y y:call system("xclip -selection clipboard", @*)<cr>
+
+
+" if exists('$WAYLAND_DISPLAY')
+"   " Yank to wl-copy on any yank (normal or visual)
+"   autocmd TextYankPost * call SetClipboard(v:event.regcontents)
+
+"   function! SetClipboard(lines)
+"     let cliptext = join(a:lines, "\n")
+"     let @* = cliptext
+"     let @+ = cliptext
+"     call system('wl-copy', cliptext)
+"   endfunction
+
+
+"   " Paste from wl-paste using `p` or `P`
+"   nnoremap <silent> p :let @" = system('wl-paste -p') \| normal! p<CR>
+"   " nnoremap <silent> P :let @" = system('wl-paste -p') \| normal! P<CR>
+" endif
+
+
+
 " nnoremap <silent> <leader>p :call system("xclip -selection clipboard -o")<cr>
-"
+
+
+
 
 
 
