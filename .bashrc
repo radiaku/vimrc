@@ -233,7 +233,7 @@ bind -x '"\C-r": __fzf_history_search'
 # Ensure only one ssh-agent is running and set the correct environment variables
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then
     eval "$(ssh-agent -s)" > /dev/null
-    eval $(keychain --eval --quiet --agents ssh id_ed25519_global)
+    # eval $(keychain --eval --quiet --agents ssh id_ed25519_global)
     # eval $(keychain --eval --agents ssh id_ed25519_global) > /dev/null
 else
     # Check if ssh-agent is running and set SSH_AUTH_SOCK
