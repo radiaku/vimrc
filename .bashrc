@@ -65,6 +65,19 @@ else
 fi
 unset color_prompt force_color_prompt
 
+# Function to sanitize session names
+sanitize_session_name() {
+  local input="$1"
+  # Trim leading/trailing whitespace using parameter expansion
+  input="${input#"${input%%[![:space:]]*}"}"
+  input="${input%"${input##*[![:space:]]}"}"
+  # Replace non-alphanumeric with _
+  local cleaned
+  cleaned="$(echo -n "$input" | tr -c '[:alnum:]' '_')"
+  # Remove trailing underscore if present
+  echo "${cleaned%"_"}"
+}
+
 
 
 # Function to manage tmux sessions
