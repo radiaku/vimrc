@@ -31,11 +31,22 @@ alias nv='nvim'
 alias v='vim'
 alias py3='python3'
 
+# History size
 HISTSIZE=10000
 HISTFILESIZE=200000
+
+# Ignore duplicate and space-prefixed commands
 HISTCONTROL=ignoreboth
+
+# Add timestamps to history
+export HISTTIMEFORMAT="%F %T "
+
+# Append to history file after each command
 shopt -s histappend
-shopt -s checkwinsize
+
+# Write to history file after every command
+PROMPT_COMMAND="history -a"
+
 
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in

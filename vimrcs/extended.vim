@@ -15,6 +15,8 @@ elseif has("unix")
   set gfn=Monospace\ 11
 endif
 
+set guifont=Iosevka\ Nerd\ Font\ 15
+
 " Disable scrollbars (real hackers don't use scrollbars for navigation!)
 set guioptions-=r
 set guioptions-=R
