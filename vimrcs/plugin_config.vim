@@ -232,3 +232,5 @@ let g:ale_debug = 1
 nnoremap <Leader>fs :Rg<cr>
 nnoremap <Leader>fa :Buffers<cr>
 
+autocmd TextYankPost * if v:event.operator is 'y' | execute 'OSCYankReg "' . v:event.regname . '"' | endif
+

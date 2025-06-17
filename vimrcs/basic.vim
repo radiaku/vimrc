@@ -293,6 +293,7 @@ map <leader>q :e ~/buffer<cr>
 " Highlight Yank 
 let g:highlightedyank_highlight_duration = 150
 
+
 " set termguicolors
 set termguicolors
 

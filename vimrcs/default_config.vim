@@ -18,7 +18,8 @@ Plug 'jeetsukumaran/vim-indentwise'
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mattn/emmet-vim'
 Plug 'dusans/vim-hardmode'
-Plug 'jasonccox/vim-wayland-clipboard'
+" Plug 'jasonccox/vim-wayland-clipboard'
+Plug 'ojroques/vim-oscyank'
 
 if !empty(system('go version'))
     Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
