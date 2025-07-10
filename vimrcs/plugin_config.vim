@@ -236,9 +236,22 @@ autocmd TextYankPost * if v:event.operator is 'y' | execute 'OSCYankReg "' . v:e
 
 " noremap <silent> <C-S-l> :vertical resize +5<CR>
 " noremap <silent> <C-S-h> :vertical resize -5<CR>
-" nnoremap <silent> <A-,> :vertical resize +5<CR>
-" nnoremap <silent> <A-.> :vertical resize -5<CR>
+" nnoremap <A-,> :vertical resize -5<CR>
+" nnoremap <A-.> :vertical resize +5<CR>
 
-nnoremap <silent> <Esc>, :vertical resize +5<CR>
-nnoremap <silent> <Esc>. :vertical resize -5<CR>
+" nnoremap <A-,> <C-w><
+" nnoremap <A-.> <C-w>>
 
+" nnoremap <M-,> <C-w><
+" nnoremap <M-.> <C-w>>
+
+nnoremap <M-,> <C-w><
+nnoremap <M-.> <C-w>>
+
+
+" nnoremap <silent> <Esc>, :vertical resize +5<CR>
+" nnoremap <silent> <Esc>. :vertical resize -5<CR>
+
+
+" nnoremap <silent> <Esc>, :vertical resize +5<CR>
+" nnoremap <silent> <Esc>. :vertical resize -5<CR>

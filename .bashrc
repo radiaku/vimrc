@@ -267,8 +267,10 @@ else
         export SSH_AUTH_SOCK=$(find /tmp/ssh-* -name "agent.*" -print -quit)
         export SSH_AGENT_PID=$(pgrep -u "$USER" -a ssh-agent | awk '{print $1}' | head -n 1)
     fi
-    if ! ssh-add -l > /dev/null 2>&1; then
-        ssh-add "$HOME/.ssh/id_ed25519_global" > /dev/null
+    if ! ssh-add -l >/dev/null 2>&1; then
+      for key in ~/.ssh/id_*; do
+        [ -f "$key" ] && ssh-add "$key" >/dev/null
+        done
     fi
 fi
 
