@@ -217,6 +217,9 @@ cas() {
 export PATH=~/.local/bin/:$PATH
 export PATH=~/local/bin/:$PATH
 
+export JAVA_HOME="/usr/lib/jvm/$(archlinux-java get)"
+export PATH="$JAVA_HOME/bin:$PATH"
+
 export PATH=$PATH:/usr/local/go/bin
 export PATH="$HOME/miniconda3/bin:$PATH"
 source "$HOME/miniconda3/etc/profile.d/conda.sh"
