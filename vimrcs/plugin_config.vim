@@ -64,15 +64,9 @@ let g:ack_use_cword_for_empty_search = 1
 " endif
 
 if executable('rg')
-  " Use ripgrep to list files (for :Files)…
-  let $FZF_DEFAULT_COMMAND =
-        \ 'rg --files --hidden --follow ' .
-        \ '--glob "!.git/*" --glob "!node_modules/*" --glob "!venv/*"'
-
-  " And define an :Rg command for content‑searching via fzf#vim#grep
   command! -bang -nargs=* Rg
         \ call fzf#vim#grep(
-        \   'rg --column --line-number --no-heading --color=always --smart-case --hidden '
+        \   'rg --column --line-number --no-heading --color=always --smart-case --hidden --exit-zero '
         \   . '--glob "!.git/*" --glob "!node_modules/*" --glob "!venv/*" '
         \   . shellescape(<q-args>), 1,
         \   {'options': ['--delimiter', ':', '--nth', '4..']}, <bang>0)
