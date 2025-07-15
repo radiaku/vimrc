@@ -64,19 +64,18 @@ let g:ack_use_cword_for_empty_search = 1
 " endif
 
 if executable('rg')
-  let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --follow --glob "!.git/*" --glob "!myenv" --glob "!venv" --glob "!node_modules"'
-  set grepprg=rg\ --vimgrep
-command! -bang -nargs=* Rg
-  \ call fzf#vim#grep(
-  \   'rg --column --line-number --no-heading --color=always --smart-case --hidden '
-  \   . '--glob "!.git" --glob "!autoload" --glob "!plugged" --glob "!temp_dirs" '
-  \   . '--glob "!myenv" --glob "!venv" --glob "!node_modules" '
-  \   . shellescape(<q-args>), 1,
-  \   {'options': '--delimiter : --nth 4..'}, <bang>0)
-  " " Rg
-  " nnoremap <silent> <Leader>fa :Find<CR> 
-  " " Rg current worda
-  " nnoremap <Leader>fw :Rg <C-R><C-W><space>
+  " Use ripgrep to list files (for :Files)…
+  let $FZF_DEFAULT_COMMAND =
+        \ 'rg --files --hidden --follow ' .
+        \ '--glob "!.git/*" --glob "!node_modules/*" --glob "!venv/*"'
+
+  " And define an :Rg command for content‑searching via fzf#vim#grep
+  command! -bang -nargs=* Rg
+        \ call fzf#vim#grep(
+        \   'rg --column --line-number --no-heading --color=always --smart-case --hidden '
+        \   . '--glob "!.git/*" --glob "!node_modules/*" --glob "!venv/*" '
+        \   . shellescape(<q-args>), 1,
+        \   {'options': ['--delimiter', ':', '--nth', '4..']}, <bang>0)
 endif
 
 cnoreabbrev Ack Ack!
