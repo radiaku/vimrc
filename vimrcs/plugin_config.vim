@@ -66,8 +66,8 @@ let g:ack_use_cword_for_empty_search = 1
 if executable('rg')
   command! -bang -nargs=* Rg
         \ call fzf#vim#grep(
-        \   'rg --column --line-number --no-heading --color=always --smart-case --hidden  '
-        \   . '--glob "!.git/*" --glob "!node_modules/*" --glob "!venv/*" '
+        \   'rg --column --line-number --no-heading --color=always --smart-case --hidden --exit-zero '
+        \   . '--glob ''!.git/*'' --glob ''!node_modules/*'' --glob ''!venv/*'' '
         \   . shellescape(<q-args>), 1,
         \   {'options': ['--delimiter', ':', '--nth', '4..']}, <bang>0)
 endif
