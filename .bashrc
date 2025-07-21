@@ -31,21 +31,16 @@ alias nv='nvim'
 alias v='vim'
 alias py3='python3'
 
-# History size
+# --- history size & file ---
 HISTSIZE=10000
 HISTFILESIZE=200000
 
-# Ignore duplicate and space-prefixed commands
-HISTCONTROL=ignoreboth
+# --- ignore dups, space‑prefixed, and erase *all* prior copies ---
+export HISTCONTROL=ignorespace:ignoredups:erasedups
 
-# Add timestamps to history
-export HISTTIMEFORMAT="%F %T "
-
-# Append to history file after each command
+# --- merge and share history between sessions ---
 shopt -s histappend
-
-# Write to history file after every command
-PROMPT_COMMAND="history -a"
+PROMPT_COMMAND="history -a; history -n"
 
 
 # set a fancy prompt (non-color, unless we know we "want" color)
