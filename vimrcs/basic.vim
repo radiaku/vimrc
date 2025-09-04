@@ -216,8 +216,8 @@ inoremap jk <Esc>
 " map <leader>ph :bprevious<cr>
 
 " Useful mappings for managing tabs
-map <C-l> :tabnext<cr>
-map <C-h> :tabprevious<cr>
+" map <C-l> :tabnext<cr>
+" map <C-h> :tabprevious<cr>
 
 " map <leader>tn :tabnew<cr>
 " map <leader>to :tabonly<cr>

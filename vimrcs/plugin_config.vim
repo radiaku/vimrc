@@ -82,8 +82,9 @@ nnoremap <leader>ff :Files<CR>
 nnoremap <silent> [q :cprevious<CR>
 nnoremap <silent> ]q :cnext<CR>
 
-nnoremap <S-l> :bnext<CR>
-nnoremap <S-h> :bprevious<CR>
+nnoremap <C-l> :bnext<CR>
+nnoremap <C-h> :bprevious<CR>
+
 
 
 let g:NERDTreeQuitOnOpen = 0
