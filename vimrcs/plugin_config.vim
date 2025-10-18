@@ -234,25 +234,23 @@ let g:oscyank_silent = v:true
 augroup Osc52YankAll
   autocmd!
 
-  def OSCYankPost(ev: dict<any>)
+  def g:OSCYankPost(ev: dict<any>)
     if ev->get('operator') ==# 'y'
       var reg = ev->get('regname', '')
       if reg ==# ''
-        reg = '0'          # unnamed yanks live in register 0
+        reg = '0'
       endif
-
-      # Send to OS clipboard via vim-oscyank (exists() -> compare to 0 in Vim9)
       if exists(':OSCYankRegister') != 0
         execute 'silent! OSCYankRegister ' .. reg
       endif
-
-      # Mirror into Vim's + and * so :reg shows them identical
-      setreg('+', getreg(reg), getregtype(reg))
-      setreg('*', getreg(reg), getregtype(reg))
+      if has('clipboard')
+        setreg('+', getreg(reg), getregtype(reg))
+        setreg('*', getreg(reg), getregtype(reg))
+      endif
     endif
   enddef
 
-  autocmd TextYankPost * call OSCYankPost(v:event)
+  autocmd TextYankPost * call g:OSCYankPost(v:event)
 augroup END
 
 " noremap <silent> <C-S-l> :vertical resize +5<CR>
