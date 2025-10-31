@@ -231,27 +231,36 @@ let g:oscyank_silent = v:true
 " autocmd TextYankPost * if v:event.operator is 'y' | execute 'OSCYankReg "' . v:event.regname . '"' | endif
 
 
-augroup Osc52YankAll
-  autocmd!
+" Backward-compatible (Vim 8) version
+if exists('##TextYankPost')
+  augroup Osc52YankAll
+    autocmd!
 
-  def g:OSCYankPost(ev: dict<any>)
-    if ev->get('operator') ==# 'y'
-      var reg = ev->get('regname', '')
-      if reg ==# ''
-        reg = '0'
-      endif
-      if exists(':OSCYankRegister') != 0
-        execute 'silent! OSCYankRegister ' .. reg
-      endif
-      if has('clipboard')
-        setreg('+', getreg(reg), getregtype(reg))
-        setreg('*', getreg(reg), getregtype(reg))
-      endif
-    endif
-  enddef
+    function! g:OSCYankPost(ev) abort
+      " Only act on yank operator
+      if get(a:ev, 'operator') ==# 'y'
+        " Which register was yanked? default to '0' when unnamed
+        let reg = get(a:ev, 'regname', '')
+        if reg ==# ''
+          let reg = '0'
+        endif
 
-  autocmd TextYankPost * call g:OSCYankPost(v:event)
-augroup END
+        " If vim-oscyank is available, send the yanked register
+        if exists(':OSCYankRegister')
+          execute 'silent! OSCYankRegister ' . reg
+        endif
+
+        " Also mirror to + and * if clipboard is supported
+        if has('clipboard')
+          call setreg('+', getreg(reg), getregtype(reg))
+          call setreg('*', getreg(reg), getregtype(reg))
+        endif
+      endif
+    endfunction
+
+    autocmd TextYankPost * call g:OSCYankPost(v:event)
+  augroup END
+endif
 
 " noremap <silent> <C-S-l> :vertical resize +5<CR>
 " noremap <silent> <C-S-h> :vertical resize -5<CR>
