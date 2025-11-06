@@ -307,6 +307,21 @@ let &t_EI = "\<Esc>[2 q"
 set laststatus=2
 set timeoutlen=300
 
+" Vimscript version of :Msgs — show :messages in a scratch buffer
+command! Msgs call s:OpenMsgs()
+function! s:OpenMsgs() abort
+  new
+  let l:messages = execute('messages')
+  " Ensure buffer is modifiable while writing
+  setlocal modifiable
+  call setline(1, split(l:messages, "\n"))
+  setlocal buftype=nofile
+  setlocal bufhidden=wipe
+  setlocal noswapfile
+  setlocal nomodifiable
+  setlocal readonly
+endfunction
+
 " autocmd VimLeave * call system("echo -n '" . escape(getreg('""'), "'") . "' | xclip -selection clipboard")
 " " Yank into all these at once:
 " "     vim y/p register
