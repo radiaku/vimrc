@@ -86,6 +86,7 @@ augroup END
 nmap <leader>xx <cmd>:ALEPopulateQuickfix<cr>
 nmap <leader>fx <cmd>:ALEFix<cr>
 nmap gd <cmd>:ALEGoToDefinition<cr>
+nmap gr <cmd>:ALEFindReferences<cr>
 
 
 function! CompileCurrentFile()
