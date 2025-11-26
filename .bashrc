@@ -97,6 +97,7 @@ manage_tmux_session() {
     else
       tmux new-session -ds "$1"
       tmux send-keys -t "$1" "cd $2" C-m 
+      tmux send-keys -t "$1" "clear" C-m
       tmux attach -t "$1" 
     fi
   else
@@ -105,6 +106,7 @@ manage_tmux_session() {
     else
       tmux new-session -ds "$1"
       tmux send-keys -t "$1" "cd $2" C-m 
+      tmux send-keys -t "$1" "clear" C-m
       tmux switch-client -t "$1"
     fi
   fi
