@@ -14,6 +14,38 @@ set clipboard=unnamedplus
 " vnoremap \y y:call system("pbcopy", getreg("\""))<CR>
 " nnoremap \p :call setreg("\"", system("pbpaste"))<CR>
 
+" Fallback: mirror unnamed yanks to system clipboard when Vim lacks +clipboard
+if !has('clipboard')
+  function! s:CopyUnnamedToSystem(ev) abort
+    " only mirror default register yanks
+    if get(a:ev, 'regname', '') !=# ''
+      return
+    endif
+    let l:reg = getreg('"', 1, 1) " prefer list so we can normalize
+    if type(l:reg) == v:t_list
+      let l:text = join(l:reg, "\n")
+    else
+      let l:text = l:reg
+    endif
+    if getregtype('"') =~# '^V'
+      let l:text .= "\n"
+    endif
+    if empty(l:text)
+      return
+    endif
+    if executable('wl-copy')
+      call system(['wl-copy', '--foreground'], l:text)
+    elseif executable('xclip')
+      call system(['xclip', '-selection', 'clipboard'], l:text)
+    endif
+  endfunction
+
+  augroup YankToSystemClipboardFallback
+    autocmd!
+    autocmd TextYankPost * call s:CopyUnnamedToSystem(v:event)
+  augroup END
+endif
+
 " Copy the current line to the unnamed register
 " nnoremap yy V"+y
 
@@ -349,8 +381,6 @@ endfunction
 
 
 " nnoremap <silent> <leader>p :call system("xclip -selection clipboard -o")<cr>
-
-
 
 
 
