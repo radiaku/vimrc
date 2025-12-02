@@ -278,6 +278,12 @@ fi
 export SSH_AUTH_SOCK
 export SSH_AGENT_PID
 
+parse_git_branch() {
+    branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
+    if [ -n "$branch" ]; then
+        echo " (git:$branch)"
+    fi
+}
 
 # Update PS1 to include git branch
 if [ "$color_prompt" = yes ]; then
