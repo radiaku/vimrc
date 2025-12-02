@@ -179,6 +179,36 @@ set nobackup
 set nowb
 set noswapfile
 
+" Large file optimizations (>1MB)
+let g:LargeFile = 1024 * 1024
+augroup LargeFile
+    autocmd!
+    autocmd BufReadPre * let f=getfsize(expand("<afile>")) | if f > g:LargeFile || f == -2 | call LargeFilePre() | endif
+    autocmd BufReadPost * if exists("b:LargeFile") | call LargeFilePost() | endif
+augroup END
+
+function! LargeFilePre()
+    " Set before file loads
+    set eventignore+=FileType,Syntax,BufEnter,BufRead
+    setlocal noswapfile
+    let b:LargeFile = 1
+endfunction
+
+function! LargeFilePost()
+    " Set after file loads
+    setlocal filetype=
+    setlocal bufhidden=unload
+    setlocal buftype=nowrite
+    setlocal undolevels=-1
+    setlocal noundofile
+    syntax off
+    autocmd! * <buffer>
+    set eventignore-=FileType,Syntax,BufEnter,BufRead
+endfunction
+
+" Manual command to apply large file settings to current buffer
+command! LargeFile let b:LargeFile=1 | call LargeFilePost()
+
 
 " Use spaces instead of tabs
 set expandtab
