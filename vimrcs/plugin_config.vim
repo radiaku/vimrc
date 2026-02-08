@@ -30,11 +30,7 @@ let g:NERDTreeWinSize=30
 " Enable vim-prettier to run in files without requiring the "@format" doc tag
 let g:prettier#autoformat = 0
 let g:prettier#config#tab_width = 2
-let g:prettier#config#trailing_comma = 'es5'
-" autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.html Prettier
-
-set encoding=utf-8
-
+let g:prettier#config#trailing_comma = 'es5' " autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.html Prettier set encoding=utf-8
 set hidden
 
 set nobackup
