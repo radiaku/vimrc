@@ -155,7 +155,7 @@ fzf-cd() {
 
 
 # Bind Ctrl+F to execute fzf-cd
-bind -x '"\C-f": fzf-cd'
+[[ $- == *i* ]] && bind -x '"\C-f": fzf-cd'
 
 function jump_to_tmux_session() {
   if [ -z "$TMUX" ]; then
@@ -186,7 +186,7 @@ function jump_to_tmux_session() {
 
 
 # Bind Alt+l to the function
-bind -x '"\C-L": jump_to_tmux_session'
+[[ $- == *i* ]] && bind -x '"\C-L": jump_to_tmux_session'
 
 
 
@@ -231,8 +231,8 @@ if [ -f /etc/profile.d/bash_completion.sh ]; then
 fi
 
 # Enable history search with up/down arrows (only if commented out above)
-bind '"\e[A": history-search-backward'
-bind '"\e[B": history-search-forward'
+[[ $- == *i* ]] && bind '"\e[A": history-search-backward'
+[[ $- == *i* ]] && bind '"\e[B": history-search-forward'
 
 # Load fzf keybindings (for fuzzy history search with Ctrl+R, Ctrl+T, etc.)
 if [ -f /usr/share/doc/fzf/examples/key-bindings.bash ]; then
@@ -252,7 +252,7 @@ __fzf_history_search() {
     fi
 }
 
-bind -x '"\C-r": __fzf_history_search'
+[[ $- == *i* ]] && bind -x '"\C-r": __fzf_history_search'
 
 # Ensure only one ssh-agent is running and set the correct environment variables
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then
