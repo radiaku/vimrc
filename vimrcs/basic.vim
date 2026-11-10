@@ -33,10 +33,11 @@ if !has('clipboard')
     if empty(l:text)
       return
     endif
+    " Vim's system() needs a String command (List form is Neovim-only)
     if executable('wl-copy')
-      call system(['wl-copy', '--foreground'], l:text)
+      call system('wl-copy', l:text)
     elseif executable('xclip')
-      call system(['xclip', '-selection', 'clipboard'], l:text)
+      call system('xclip -selection clipboard', l:text)
     endif
   endfunction
 
